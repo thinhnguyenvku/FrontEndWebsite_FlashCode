@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tài liệu - Kho tài liệu lập trình miễn phí</title>
+	<link rel="icon" type="img/png" href="image/flash.jpg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	
+	<script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/inline/ckeditor.js"></script>
+	
+	<script src="./js/btn-top.js"></script>
+	
+	
+	<link rel="stylesheet" href="./css/document.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	
+	<span id="back-to-top">
+		<i class="fas fa-chevron-up fa-2x"></i>
+	</span>
+
+	<!-- NAVIGATION -->
+
+	<nav class="navbar navbar-expand-lg bg-light sticky-top">
+		<a class="navbar-brand" href="index.html"><img src="./image/logo.jpg" alt="logo" class="logo"></a>
+		<button class="navbar-toggler menu" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon">MENU</span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="learn.html" id="navbardrop" data-toggle="dropdown">Khóa học</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="learn.html#section1">Kiến thức cơ sở</a>
+							<a class="dropdown-item" href="learn.html#section2">Lập trình cơ sở</a>
+							<a class="dropdown-item" href="learn.html#section3">Lập trình nâng cao</a>
+							<a class="dropdown-item" href="learn.html#section4">Giải quyết vấn đề</a>
+							<a class="dropdown-item" href="learn.html#section5">Kỹ năng nâng cao</a>
+						</div>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="train.html">Luyện tập</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="fight.html">Thi đấu</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="forum.html">Diễn đàn</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link gachchan" href="document.html">Tài liệu</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="share.html">Chia sẻ</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="tool.html">Thủ thuật</a>
+				</li>
+			</ul>
+			<ul  class="navbar-nav ml-auto">				
+				<li class="dropdown sel">
+					<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img src="https://www.countryflags.io/vn/flat/32.png"></a>
+					<div class="dropdown-menu sel1">
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/vn/flat/32.png">Tiếng Việt</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/gb/flat/32.png">English</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/kr/flat/32.png">한국어</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/jp/flat/32.png">日本語</a>
+					</div>
+				</li>
+				<li class="vip">
+					<form action="account.html" class="vip">
+						<button type="submit" class="btn btn-danger" style="margin: 0px 10px;">
+							Đăng Nhập
+						</button>
+					</form>
+				</li>
+		    </ul>
+		</div>
+	</nav>
+	
+	
+	<!-- HEADER -->
+	<div class="headdoc" style="background: url(./image/bannerfull.jpg);">
+		<div class="container">
+			<h2 class="text-whi">Tự học lập trình tại nhà. Hãy tham khảo ngay tài liệu của chúng tôi!</h2>
+		</div>
+	</div>
+	
+	<!-- DANH MỤC TÀI LIỆU -->
+	
+	<div class="topp menu">
+            <div class="container">
+				
+				<!-- MENU TAB -->
+				
+                <div class="menu-tab">
+                    <ul class="nav justify-content-center nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#ds">Khoa học dữ liệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#it">Kĩ thuật phần mềm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#is">An toàn thông tin</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#pts">Thiết kế đồ họa</a>
+                        </li>
+                    </ul>
+					<br>
+					
+                    <div class="tab-content">
+					
+						<!-- KHOA HỌC DỮ LIỆU -->
+						
+                        <div id="ds" class="container tab-pane active">
+                            <div class="row">
+							
+								<!-- HÀNG 1 -->
+                                <div class="col-lg-7 col-md-12">
+								
+									<!-- TÀI LIỆU 1 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-word fa-4x text-x"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Bắt đầu với Python</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Đây là tài liệu hoàn hảo cho người mới bắt đầu, ngay cả khi bạn chưa biết gì về Python.</p>
+										<form action="#!">
+											<div class="form-row">
+												<div class="col">
+													<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal1">Xem chi tiết</button>
+													<div class="modal" id="myModal1">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<h3>Bắt đầu với Python</h3>
+																</div>
+																<p style="margin:10px;">Đây là cuốn sách hoàn hảo cho người mới bắt đầu, ngay cả khi bạn chưa biết gì về Python.
+																	Cuốn sách cung cấp kiến ​​thức cơ bản về đại số tuyến tính, thống kê và xác suất; đồng thời đi
+																	sâu vào những nguyên tắc nền tảng của học máy, các mô hình Naive Bayes, hồi quy tuyến tính,
+																	cây quyết định, mạng nơ-ron và phân cụm. Trong cuốn sách, tác giả Joel Grus cũng đưa người
+																	đọc bước đầu khám phá hệ thống đề xuất, xử lý ngôn ngữ và tiếng nói, MapReduce và cơ sở dữ liệu.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+												</div>
+											</div>
+										</form>
+									</div>
+									
+									<!-- TÀI LIỆU 2 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-pdf fa-4x text-red"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Học máy với Python</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Cuốn sách này phù hợp với những newbies nhưng muốn tìm hiểu sâu hơn về Học máy.</p>
+										<form action="#!">
+										<div class="form-row">
+											<div class="col">
+												<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal2">Xem chi tiết</button>
+												<div class="modal" id="myModal2">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h3>Học máy với Python</h3>
+															</div>
+															<p style="margin:10px;">Cuốn sách này phù hợp với những newbies nhưng muốn tìm hiểu sâu hơn về Học máy.
+															Tác giả sẽ đi từ những khái niệm, đến phân tích ưu điểm, hạn chế của các thuật toán học máy phổ biến. 
+															Một số phương pháp nâng cao để đánh giá mô hình và điều chỉnh tham số, các kỹ thuật xử lý văn bản cụ thể 
+															và những đề xuất để cải thiện chất lượng của học máy và cơ sở dữ liệu cũng được đề cập trong cuốn sách.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+											</div>
+										</div>
+									</form>
+									</div>
+								</div>
+								
+								<!-- HÀNG 2 -->
+								<div class="col-lg-7 col-md-12">
+								
+									<!-- TÀI LIỆU 3 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-pdf fa-4x text-red"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Kĩ sư DataScience</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Công việc cụ thể của một nhà khoa học dữ liệu là gì? Cuốn sách sẽ cho bạn một cái nhìn chân thực nhất.</p>
+										<form action="#!">
+											<div class="form-row">
+												<div class="col">
+													<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal3">Xem chi tiết</button>
+													<div class="modal" id="myModal3">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<h3>Kĩ sư DataScience</h3>
+																</div>
+																<p style="margin:10px;">“Data Science Job: How to become a Data Scientist”: Data Scientist là gì? Công việc cụ thể của
+																một nhà khoa học dữ liệu là gì? Cuốn sách sẽ cung cấp cho bạn một cái nhìn tổng quan, chân thực nhất.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+												</div>
+											</div>
+										</form>
+									</div>
+									
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-word fa-4x text-x"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Học sâu với Python</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Cuốn sách cung cấp tri thức về các thuật toán học sâu. Đây là cuốn sách duy nhất toàn diện về học sâu.</p>
+										<form action="#!">
+										<div class="form-row">
+											<div class="col">
+												<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal4">Xem chi tiết</button>
+												<div class="modal" id="myModal4">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h3>Học sâu với Python</h3>
+															</div>
+															<p style="margin:10px;">“Deep Learning (Adaptive Computation and Machine Learning series)”: Cuốn sách cung cấp tri thức về các thuật toán học sâu.
+															“Được viết bởi ba chuyên gia trong lĩnh vực, đây là cuốn sách duy nhất toàn diện về học sâu”, Elon Musk, CEO của Tesla và  SpaceX nhận xét.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+											</div>
+										</div>
+									</form>
+									</div>
+								</div>
+								
+								<!-- LOGO KHDL -->
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="./image/ds.jpg" alt="Logo Khoa học dữ liệu" class="logomenu">
+                                </div>
+                            </div>
+                        </div>
+						
+						<!-- KĨ THUẬT PHẦN MỀM -->
+						
+						<div id="it" class="container tab-pane fade">
+                            <div class="row">
+							
+								<!-- HÀNG 3 -->
+                                <div class="col-lg-7 col-md-12">
+								
+									<!-- TÀI LIỆU 5 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-pdf fa-4x text-red"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Code Complete</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Đây là một tuyệt tác giúp đưa kỹ năng lập trình phần mềm của bạn lên một tầm cao mới.</p>
+										<form action="#!">
+											<div class="form-row">
+												<div class="col">
+													<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal5">Xem chi tiết</button>
+													<div class="modal" id="myModal5">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<h3>Code Complete</h3>
+																</div>
+																<p style="margin:10px;">Đây là một tuyệt tác giúp đưa kỹ năng lập trình phần mềm của bạn lên một tầm cao mới. 
+																Cuốn sách này có lối viết chặt chẽ và nội dung bao hàm nhiều chủ đề, giúp mở ra những ranh giới mới cho người đọc.
+																	<br>
+																Cụ thể, cuốn sách giới thiệu về các kỹ thuật và phương pháp liên quan tới thiết kế code, quy trình, và chất lượng.
+																Mọi nhà phát triển đều nên đọc cuốn sách này ít nhất một lần – tuy nhiên, đây lại không phải là một cuối sách phù hợp cho những người mới bắt đầu, hoặc mới biết cơ bản về lập trình.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+												</div>
+											</div>
+										</form>
+									</div>
+									
+									<!-- TÀI LIỆU 6 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-word fa-4x text-x"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Algorithms</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Giúp bạn thực hiện được các tác vụ khó hơn, và trả lời được nhiều câu hỏi phỏng vấn hơn.</p>
+										<form action="#!">
+										<div class="form-row">
+											<div class="col">
+												<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal6">Xem chi tiết</button>
+												<div class="modal" id="myModal6">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h3>Algorithms</h3>
+															</div>
+															<p style="margin:10px;">Rốt cuộc thì thuật toán là gì? Thông thường, ta chỉ hiểu về nó qua một định nghĩa kiểu như:
+															“Thuật toán là một bộ các chỉ dẫn cho một tác vụ cụ thể.” Nhiều nhà phát triển có thể làm việc suốt hàng tháng,
+															trải qua rất nhiều dự án, mà vẫn không hiểu gì về các thuật toán và cấu trúc dữ liệu thông thường nhất.
+															Nhiều người thì nghĩ rằng, họ chẳng cần đến chúng. Tuy nhiên, hiểu biết về các thuật toán nâng cao sẽ
+															không chỉ giúp bạn viết ra được các code gọn hơn, mà còn thực hiện được các tác vụ khó hơn
+															, và trả lời được nhiều câu hỏi phỏng vấn hơn.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+											</div>
+										</div>
+									</form>
+									</div>
+								</div>
+								
+								<!-- HÀNG 4 -->
+								<div class="col-lg-7 col-md-12">
+								
+									<!-- TÀI LIỆU 7 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-word fa-4x text-x"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Clean Code</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Đây là một cuốn sách chia sẻ về các phương thức lập trình hiệu quả nhất hiện nay.</p>
+										<form action="#!">
+											<div class="form-row">
+												<div class="col">
+													<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal7">Xem chi tiết</button>
+													<div class="modal" id="myModal7">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<h3>Clean Code</h3>
+																</div>
+																<p style="margin:10px;">Đây là một cuốn sách chia sẻ về các phương thức lập trình hiệu quả nhất,
+																và vì vậy vô cùng thích hợp cho những ai hay viết code. Với Clean Code, người đọc sẽ viết được
+																code tốt hơn trong mọi ngôn ngữ lập tình mà họ mong muốn. Clean Code chủ yếu tập trung vào Java,
+																song các khái niệm và lời khuyên trong cuốn sách hoàn toàn có thể được áp dụng cho các ngôn ngữ 
+																lập trình thiên vật thể khác.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+												</div>
+											</div>
+										</form>
+									</div>
+									
+									<!-- TÀI LIỆU 8 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-pdf fa-4x text-red"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Rework</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Đây là một cuốn sách thuộc danh sách bán chạy hàng đầu của New York Times.</p>
+										<form action="#!">
+										<div class="form-row">
+											<div class="col">
+												<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal8">Xem chi tiết</button>
+												<div class="modal" id="myModal8">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h3>Rework</h3>
+															</div>
+															<p style="margin:10px;">Đây là một cuốn sách thuộc danh sách bán chạy hàng đầu của New York Times
+															– với chủ đề chủ yếu là về kinh doanh.
+															Tuy nhiên, nó lại rất hữu dụng cho các nhà phát triển với tham vọng tự thành lập công ty của chính mình.
+																<br>
+															Vì vậy, nếu bạn tự tin rằng mình đã có một ý tưởng triệu đô, thì hãy đọc cuốn sách này kết hợp cùng 
+															những sách nói trên để có thể xây dựng được bất cứ sản phẩm nào mà bạn mong muốn!
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+											</div>
+										</div>
+									</form>
+									</div>
+								</div>
+								
+								<!-- LOGO KTPM -->
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="./image/it.jpg" alt="Logo Kĩ thuật phần mềm" class="logomenu">
+                                </div>
+                            </div>
+                        </div>
+						
+						<!-- AN TOÀN THÔNG TIN -->
+						
+						<div id="is" class="container tab-pane fade">
+                            <div class="row">
+							
+								<!-- HÀNG 5 -->
+                                <div class="col-lg-7 col-md-12">
+								
+									<!-- TÀI LIỆU 9 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-word fa-4x text-x"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>An Toàn Thông Tin</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Đây là cuốn sách hay về an toàn thông tin giúp bạn bảo mật dữ liệu cá nhân.</p>
+										<form action="#!">
+											<div class="form-row">
+												<div class="col">
+													<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal9">Xem chi tiết</button>
+													<div class="modal" id="myModal9">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<h3>An Toàn Thông Tin</h3>
+																</div>
+																<p style="margin:10px;">Chương 1: Tổng quan về An toàn thông tin: gồm 5 mục nội dung trình bày khái niệm về thông tin, hệ thống thông tin 
+																và vấn đề an ninh, an toàn thông tin, các công cụ bảo đảm ATTT, giấu tin và giới thiệu các bài toán phổ biến trong ATTT.
+																	<br>
+																Chương 2: Cơ sở Toán học: gồm 3 mục nội dung trình bày các khái niệm cơ sở về số học liên quan đế ATTT, các khái niệm cơ sở về đại số
+																liên quan đế ATTT, các khái niệm về thuật toán và độ phức tạp của thuật toán.
+																	<br>
+																Chương 3: Hệ mật mã: gồm 8 mục nội dung trình bày các đặc trưng của hệ mật mã, hệ mật mã khóa đối xứng-cổ điển, hệ mật mã khóa công
+																khai RSA, Rabin, Elgaman, tương tự Elgaman, hệ mật mã dựa trên các bài toán NP-đầy đủ, hệ mật mã xác suất khóa công khai.
+																	<br>
+																Chương 4: Bài toán xác nhận và chữ ký số: gồm 11 mục nội dung trình bày tổng quan về chữ ký số, chữ ký RSA, chữ ký Elgaman, chữ ký DSS,
+																chữ ký RABIN, chữ ký không thể phủ nhận, chữ ký mù, chuẩn chữ ký XML, đại diện tài liệu và hàm băm, các phương pháp tấn công chữ ký điện tử,
+																và bảo đảm xác thực.
+																	<br>
+																Chương 5: Quản lý khóa: gồm 3 mục nội dung trình bày tổng quan về quản lý khóa, giao thức phân phối khóa và giao thức thỏa thuận khóa.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+												</div>
+											</div>
+										</form>
+									</div>
+									
+									<!-- TÀI LIỆU 10 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-pdf fa-4x text-red"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Gián Điệp Mạng</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Đây là cuốn sách hay về an toàn thông tin giúp bạn bảo mật dữ liệu cá nhân.</p>
+										<form action="#!">
+										<div class="form-row">
+											<div class="col">
+												<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal10">Xem chi tiết</button>
+												<div class="modal" id="myModal10">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h3>Gián Điệp Mạng</h3>
+															</div>
+															<p style="margin:10px;">Từ một sai lệch kế toán 75 xu, Stoll nghi ngờ có người sử dụng trái phép hệ thống của mình
+																<br>
+															Ông bắt tay vào quá trình tìm kiếm tên hacker bí ẩn bằng nhiều công cụ theo dõi thô sơ tự chế
+																<br>
+															Không cần đến FBI, CIA và các cơ quan an ninh, quân sự khác, Stoll rong ruổi theo gã hacker
+															qua mạng lưới quân sự nhạy cảm, các căn cứ quân sự, vệ tinh xuyên Đại Tây Dương, Nhật và Đức
+																<br>
+															Như một bộ phim Hollywood, bạn đọc sẽ được chứng kiến và xác thực cách để một tay gà mờ công nghệ xâm nhập 
+															vào mạng máy tính, len lỏi trong thế giới hacker bằng một chiến lược tự chế đã tóm gọn thành công một hacker
+															quốc tế với động cơ là tiền, cocaine và những âm mưu tình báo
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+											</div>
+										</div>
+									</form>
+									</div>
+								</div>
+								
+								<!-- HÀNG 6 -->
+								<div class="col-lg-7 col-md-12">
+								
+									<!-- TÀI LIỆU 11 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-pdf fa-4x text-red"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Hacker Lược Sử</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Đây là cuốn sách hay về an toàn thông tin giúp bạn bảo mật dữ liệu cá nhân.</p>
+										<form action="#!">
+											<div class="form-row">
+												<div class="col">
+													<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal11">Xem chi tiết</button>
+													<div class="modal" id="myModal11">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<h3>Hacker Lược Sử</h3>
+																</div>
+																<p style="margin:10px;">Cuốn sách nói về những nhân vật, cỗ máy, sự kiện định hình cho văn hóa và đạo đức 
+																hacker từ những hacker đời đầu ở đại học MIT
+																	<br>
+																Câu chuyện hấp dẫn bắt đầu từ các phòng thí nghiệm nghiên cứu máy tính đầu tiên đến các máy tính gia đình
+																	<br>
+																Tập hợp tài liệu cập nhật từ các tin tặc nổi tiếng như Bill Gates, Mark Zuckerberg, Richard Stallman…
+																	<br>
+																Những sự thật về cuộc sống và con đường trở thành “tin tặc” của những con người đã thay đổi lịch sử phát 
+																triển của ngành Công nghệ
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+												</div>
+											</div>
+										</form>
+									</div>
+									
+									<!-- TÀI LIỆU 12 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-word fa-4x text-x"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Nghệ Thuật Ẩn Mình</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Đây là cuốn sách hay về an toàn thông tin giúp bạn bảo mật dữ liệu cá nhân.</p>
+										<form action="#!">
+										<div class="form-row">
+											<div class="col">
+												<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal12">Xem chi tiết</button>
+												<div class="modal" id="myModal12">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h3>Nghệ Thuật Ẩn Mình</h3>
+															</div>
+															<p style="margin:10px;">Kevin Mitnick – hacker nổi tiếng nhất thế giới sẽ:
+																<br>
+															Hướng dẫn bạn cách giấu các thông tin nhận dạng cá nhân của mình trong kỷ nguyên dữ liệu lớn
+																<br>
+															Chỉ ra những lỗ hổng mà người khác có thể lợi dụng để giành quyền kiểm soát dữ liệu của bạn
+																<br>
+															Đưa ra những giải pháp giúp bạn bảo mật cá nhân
+																<br>
+															Có thể bạn không có gì phải giấu diếm. Nhưng bạn có rất nhiều thứ phải bảo vệ.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+											</div>
+										</div>
+									</form>
+									</div>
+								</div>
+								
+								<!-- LOGO ATTT -->
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="./image/is.jpg" alt="Logo An toàn thông tin" class="logomenu">
+                                </div>
+                            </div>
+                        </div>
+						
+						<!-- THIẾT KẾ ĐỒ HỌA -->
+						
+						<div id="pts" class="container tab-pane fade">
+                            <div class="row">
+							
+								<!-- HÀNG 7 -->
+                                <div class="col-lg-7 col-md-12">
+								
+									<!-- TÀI LIỆU 13 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-pdf fa-4x text-red"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Thiết kế Logo</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Những chiếc logo đa dạng màu sắc, hình dạng, kiểu dáng sẽ giúp bạn khơi gợi nguồn cảm hứng sáng tác.</p>
+										<form action="#!">
+											<div class="form-row">
+												<div class="col">
+													<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal13">Xem chi tiết</button>
+													<div class="modal" id="myModal13">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<h3>Thiết kế Logo</h3>
+																</div>
+																<p style="margin:10px;">Quyển sách đầu tiên mà chúng tôi muốn giới thiệu đến những ai có niềm đam mê với Thiết kế Đồ hoạ là quyển
+																“Logo Design” của tác giả Paul Middleton. Ông là Hiệu trưởng của trường Nghệ Thuật tại Đại học Northampton và có mối quan tâm hàng
+																đầu về tin tức truyền hình cũng như những thiết kế đa nền tảng.
+																	<br>
+																Trong quyển “Logo Design”, tác giả chú trọng đến phần thiết kế logo để dễ dàng kết nối và chia sẻ với người đọc. Những chiếc logo
+																đa dạng màu sắc, hình dạng, kiểu dáng sẽ giúp bạn khơi gợi nguồn cảm hứng sáng tác và đôi khi là “gỡ rối” trong lúc bí ý tưởng nữa đấy. 
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+												</div>
+											</div>
+										</form>
+									</div>
+									
+									<!-- TÀI LIỆU 14 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-word fa-4x text-x"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Logo Design Love</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Đây là một trong những quyển sách gối đầu giường của các designer nghiệp dư hay kể cả chuyên nghiệp.</p>
+										<form action="#!">
+										<div class="form-row">
+											<div class="col">
+												<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal14">Xem chi tiết</button>
+												<div class="modal" id="myModal14">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h3>Logo Design Love</h3>
+															</div>
+															<p style="margin:10px;">Là một trong những quyển sách gối đầu giường của các designer, “Logo Design Love” cũng là một trong 
+															những quyển sách hay nhất của David Airey – một Graphic Designer nổi tiếng đến từ Bắc Ireland. Tác giả của cuốn sách này có
+															hiểu biết sâu rộng về xây dựng thương hiệu từ việc tạo ra những logo và đã mang lại sự thành công cho rất nhiều công ty.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+											</div>
+										</div>
+									</form>
+									</div>
+								</div>
+								
+								<!-- HÀNG 8 -->
+								<div class="col-lg-7 col-md-12">
+								
+									<!-- TÀI LIỆU 15 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-word fa-4x text-x"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Thiết kế đồ họa</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Đây là một trong những quyển sách sáng giá nhất cho những ai thực sự có đam mê với Thiết kế Đồ hoạ.</p>
+										<form action="#!">
+											<div class="form-row">
+												<div class="col">
+													<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal15">Xem chi tiết</button>
+													<div class="modal" id="myModal15">
+														<div class="modal-dialog">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<h3>Thiết kế đồ họa</h3>
+																</div>
+																<p style="margin:10px;">Có thể nói, “Graphic Design Shool” là một trong những quyển sách đáng giá mà các Designer
+																phải chú ý đến. Bởi vì, đây là một trong những quyển sách sáng giá nhất cho những ai thực sự có đam mê với Thiết
+																kế Đồ hoạ. Quyển sách được ba tác giả David Dabner – Sandra Stewat – Eric Zempol đồng sáng tác nhằm mục đích chia 
+																sẻ và hướng dẫn cho những nhà sáng tạo về lĩnh vực Thiết kế Đồ hoạ. 
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<button type="submit" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+												</div>
+											</div>
+										</form>
+									</div>
+									
+									<!-- TÀI LIỆU 16 -->
+									<div class="top1">
+										<div class="form-row file">
+											<div class="col-lg-3 ppp">
+												<i class="far fa-file-pdf fa-4x text-red"></i>
+											</div>
+											<div class="col-lg-9">
+												<h5>Brand Identity</h5>
+											</div>	
+										</div>
+										<br>
+										<p>Chủ đề được đề cập đến nhiều mhất trong quyển sách là nắm bắt thông tin một cách dễ dàng nhất.</p>
+										<form action="#!">
+										<div class="form-row">
+											<div class="col">
+												<button type="button" class="btn btn-outline-x" style="margin: 5px 0px 5px 5px;" data-toggle="modal" data-target="#myModal16">Xem chi tiết</button>
+												<div class="modal" id="myModal16">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h3>Brand Identity</h3>
+															</div>
+															<p style="margin:10px;">“Designing Brand Identity” là một quyển sách dành cho tất cả mọi người,
+															những ai có hứng thú về nhãn hiệu hay mong muốn tạo một nhãn hiệu theo chất riêng mình. Chính vì
+															thế, đừng chần chừ, hãy đọc quyển sách này để khơi gợi nguồn cảm hứng cho bản thân.
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<button type="download" class="btn btn-outline-danger" style="margin: 5px 5px 5px 42px;">Tải ngay</i></button>
+											</div>
+										</div>
+									</form>
+									</div>
+								</div>
+								
+								<!-- LOGO TKĐH -->
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="./image/pts.jpg" alt="Logo Thiết kế đồ họa" class="logomenu">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<br><br><br><br>
+	<!-- FOOTER -->
+	
+	<footer class="bg-light text-center text-bla bor">
+		<div class="container p-4">
+			<section class="mb-4">
+				<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn btn-outline-info btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+				<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+				<a class="btn btn-outline-purple btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+				<a class="btn btn-outline-primary btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+				<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+			</section>
+			<section class="">
+				<form action="#!">
+					<div class="row d-flex justify-content-center">
+						<div class="col-auto">
+							<p class="pt-2">
+								<strong>Đăng ký Email nhận tin mới:</strong>
+							</p>
+						</div>
+						<div class="col-md-5 col-12">
+							<div class="form-outline form-whi mb-4">
+								<input type="email" id="form5Example2" class="form-control" />
+							</div>
+						</div>
+						<div class="col-auto">
+							<button type="submit" class="btn btn-outline-x mb-4">
+								Đăng ký
+							</button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section class="mb-4">
+				<p>
+					FlashCode là nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách <br>nhanh chóng và chính xác.
+				</p>
+			</section>
+			<section style="text-align: left;">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+						<h4 class="text-red">THÔNG TIN</h4>
+						<ul class="list-unstyled mb-0 footinfo">
+							<li>
+								<i class="fas fa-map-marker-alt text-red"> </i>
+								<a href="#!" class="text-bla"> &nbsp;470 Trần Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</a>
+							</li>
+							<li>
+								<i class="fas fa-phone text-red"> </i>
+								<a href="#!" class="text-bla"> 0973309606</a>
+							</li>
+							<li>
+								<i class="far fa-envelope text-red"> </i>
+								<a href="#!" class="text-bla"> npthinh.20it2@vku.udn.vn</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h4 class="text-x">LIÊN KẾT</h4>
+						<ul class="list-unstyled mb-0 foot">
+							<li>
+								<a href="learn.html" class="text-bla">Khóa học</a>
+							</li>
+							<li>
+								<a href="train.html" class="text-bla">Luyện tập</a>
+							</li>
+							<li>
+								<a href="fight.html" class="text-bla">Thi đấu</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot">
+						<h4 class="text-x">HỖ TRỢ</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="document.html" class="text-bla">Tài liệu</a>
+							</li>
+							<li>
+								<a href="share.html" class="text-bla">Chia sẻ</a>
+							</li>
+							<li>
+								<a href="tool.html" class="text-bla">Thủ thuật</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot">
+						<h4 class="text-x">TRỢ GIÚP</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="forum.html" class="text-bla">Diễn đàn</a>
+							</li>
+							<li>
+								<a href="aboutus.html" class="text-bla">Về chúng tôi</a>
+							</li>
+							<li>
+								<a href="contact.html" class="text-bla">Liên hệ với chúng tôi</a>
+							</li>
+						</ul>
+					</div>
+			
+				</div>
+			</section>
+		</div>
+		<div class="text-center p-3 text-whi" style="background-color: rgba(0, 0, 0);">
+			Cung cấp bởi <a class="text-whi" href="#!">THINHVKU</a> © 2021 Copyright. Sắp đăng ký bản quyền rev 04/11/2021 9:11:02 PM
+		</div>
+	</footer>
+</body>

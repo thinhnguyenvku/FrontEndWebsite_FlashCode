@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FlashCode - Học lập trình để đi làm!</title>
+	<link rel="icon" type="img/png" href="image/flash.jpg">
+	<meta name="news_keywords" content="flashcode, khóa học, lập trình, trực tuyến, học lập trình miễn phí, thủ thuật lập trình" />
+	<meta name="description" content="FlashCode - nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách nhanh chóng và chính xác." />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	
+	<script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/inline/ckeditor.js"></script>
+	
+	<script src="./js/btn-top.js"></script>
+	
+	
+	<link rel="stylesheet" href="./css/style.css">
+	
+	<link rel="stylesheet" href="./css/homelearn.css">
+	<link rel="stylesheet" href="./css/homeshare.css">
+	<link rel="stylesheet" href="./css/homefight.css">
+	<link rel="stylesheet" href="./css/homedocument.css">
+	<link rel="stylesheet" href="./css/hometrain.css">
+	<link rel="stylesheet" href="./css/homeforum.css">
+	<link rel="stylesheet" href="./css/hometeam.css">
+	<link rel="stylesheet" href="./css/homediff.css">
+</head>
+<body>
+	
+	<span id="back-to-top">
+		<i class="fas fa-chevron-up fa-2x"></i>
+	</span>
+	
+	<!-- NAVIGATION -->
+
+	<nav class="navbar navbar-expand-lg bg-light sticky-top">
+		<a class="navbar-brand" href="index.html"><img src="./image/logo.jpg" alt="logo" class="logo"></a>
+		<button class="navbar-toggler menu" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon">MENU</span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="learn.html" id="navbardrop" data-toggle="dropdown">Khóa học</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="learn.html#section1">Kiến thức cơ sở</a>
+							<a class="dropdown-item" href="learn.html#section2">Lập trình cơ sở</a>
+							<a class="dropdown-item" href="learn.html#section3">Lập trình nâng cao</a>
+							<a class="dropdown-item" href="learn.html#section4">Giải quyết vấn đề</a>
+							<a class="dropdown-item" href="learn.html#section5">Kỹ năng nâng cao</a>
+						</div>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="train.html">Luyện tập</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="fight.html">Thi đấu</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="forum.html">Diễn đàn</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="document.html">Tài liệu</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="share.html">Chia sẻ</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="tool.html">Thủ thuật</a>
+				</li>
+			</ul>
+			<ul  class="navbar-nav ml-auto">				
+				<li class="dropdown sel">
+					<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img src="https://www.countryflags.io/vn/flat/32.png"></a>
+					<div class="dropdown-menu sel1">
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/vn/flat/32.png">Tiếng Việt</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/gb/flat/32.png">English</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/kr/flat/32.png">한국어</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/jp/flat/32.png">日本語</a>
+					</div>
+				</li>
+				<li class="vip">
+					<form action="account.html" class="vip">
+						<button type="submit" class="btn btn-danger" style="margin: 0px 10px;">
+							Đăng Nhập
+						</button>
+					</form>
+				</li>
+		    </ul>
+		</div>
+	</nav>
+	
+	<!-- KHÓA HỌC 8 + CHIA SẺ 4 -->
+	
+	<div class="top">
+		<div class="row">
+			
+			<!-- KHÓA HỌC -->
+			
+			<div class="col-sm-8">
+				<div>
+					<h3 id="tieude1"><a href="learn.html">Khóa học</a></h3>
+				</div>
+				<a href="z_learn.html" style="text-decoration: none; color: black;">
+					<div class="top1 ima" id="top11" title="C++ cho người mới bắt đầu">
+						<img src="./image/C++chonguoimoibatdau.jpg" alt="Image C++ cho người mới bắt đầu"><br>
+						<br><h5>C++ cho người mớ...</h5>
+						<p>Khóa học lập trình C++ cơ bản cho người mới bắt đầu. Khóa học...</p>
+					</div>
+				</a>
+				<a href="z_learn.html" style="text-decoration: none; color: black;">
+					<div class="top1 ima" id="top11" title="Lập trình hướng đối tượng trong Java">
+						<img src="./image/laptrinhhuongdoituongtrongjava.jpg" alt="Image Lập trình hướng đối tượng trong Java"><br>
+						<br><h5>Lập trình hướng đ...</h5>
+						<p>Lập trình hướng đối tượng là phương pháp lập trình dựa trên đố...</p>
+					</div>
+				</a>
+				<a href="z_learn.html" style="text-decoration: none; color: black;">
+					<div class="top1 ima" id="top11" title="Python cơ bản">
+						<img src="./image/pythoncoban.jpg" alt="Image Python cơ bản"><br>
+						<br><h5>Python cơ bản</h5>
+						<p>Khóa học lập trình Python cơ bản với các bài tập và lý thuyết dễ...</p>
+					</div>
+				</a>
+				<a href="z_learn.html" style="text-decoration: none; color: black;">
+					<div class="top1 ima" title="Java cơ bản">
+						<img src="./image/javacoban.jpg" alt="Image Java cơ bản"><br>
+						<br><h5>Java cơ bản</h5>
+						<p>Khóa học lập trình Java cơ bản cho người mới bắt đầu, khóa học...</p>
+					</div>
+				</a>
+				<a href="z_learn.html" style="text-decoration: none; color: black;">
+					<div class="top1 ima" title="Phần cứng máy tính">
+						<img src="./image/phancungmaytinh.png" alt="Image Phần cứng máy tính"><br>
+						<br><h5>Phần cứng máy tính</h5>
+						<p>Phần mềm luôn là công cụ cần thiết trong mọi lĩnh vực, khóa học...</p>
+					</div>
+				</a>
+				<a href="z_learn.html" style="text-decoration: none; color: black;">
+					<div class="top1 ima" title="JavaScript cơ bản">
+						<img src="./image/javascriptcoban.jpg" alt="Image Javascript cơ bản"><br>
+						<br><h5>JavaScript cơ bản</h5>
+						<p>Giúp học viên nắm vững các nguyên tắc và cú pháp cơ bản...</p>
+					</div>	
+				</a>
+			</div>
+				
+			<!-- CHIA SẺ -->
+				
+			<div class="col-sm-4">
+				<h3 id="tieude2"><a href="share.html">Chia sẻ</a></h3>
+				<ul>
+					<a href="z_share.html" style="text-decoration: none; color: black;">
+						<li title="Trở Thành Một Front End Developer Toàn Diện?">
+							<img src="./image/chiase1.jpg" class="alo" alt="Image Trở Thành Một Front End Developer Toàn Diện?">
+							<p>Trở Thành Một Front End Developer Toàn Diện?</p>
+						</li>
+					</a>
+					<a href="z_share.html" style="text-decoration: none; color: black;">
+						<li title="Thuật toán đào tạo mạng học sâu nhanh gấp 15 lần GPU">
+							<img src="./image/chiase2.jpg" class="alo" alt="Image Thuật toán đào tạo mạng học sâu nhanh gấp 15 lần GPU">
+							<p>Thuật toán đào tạo mạng học sâu nhanh gấp 15 lần GPU</p>
+						</li>
+					</a>
+					<a href="z_share.html" style="text-decoration: none; color: black;">
+						<li title="Cân bằng PTHH bằng C++">
+							<img src="./image/chiase3.jpg" class="alo" alt="Image Cân bằng PTHH bằng C++">
+							<p>Cân bằng PTHH bằng C++</p>
+						</li>
+					</a>
+					<a href="z_share.html" style="text-decoration: none; color: black;">
+						<li title="Tại Sao Mình Sử Dụng Linux?">
+							<img src="./image/chiase4.jpg" class="alo" alt="Image Tại Sao Mình Sử Dụng Linux?">
+							<p>Tại Sao Mình Sử Dụng Linux?</p>
+						</li>
+					</a>
+					<a href="z_share.html" style="text-decoration: none; color: black;">
+						<li title="Xây dựng trò chơi đoán số bằng Python" style="border-bottom: none;">
+							<img src="./image/chiase5.jpg" class="alo" alt="Image Xây dựng trò chơi đoán số bằng Python">
+							<p>Xây dựng trò chơi đoán số bằng Python</p>
+						</li>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- THI ĐẤU -->
+	
+	<div class="top">	
+		<div>
+			<h3 id="tieude"><a href="fight.html">Thi đấu</a></h3>
+		</div>
+		<div class="row">
+			<div class="our-team top2 col-sm-5" title="Cuộc thi BWD 2021 do ĐH CNTT&TT Việt - Hàn tổ chức">
+				<a href="z_fight.html" style="text-decoration: none; color: black;">
+					<div class="picture">
+						<img class="img-fluid ima" src="image/thi3.png" alt="Banner Cuộc thi BWD 2021 do ĐH CNTT&TT Việt - Hàn tổ chức">
+					</div>
+					<div class="team-content">
+						<br>
+						<h3 class="name">BEST WEB DESIGN 2021</h3>
+						<h4 class="title">Cuộc thi lập trình trực tuyến do VKU tổ chức dành cho những người yêu thích lập trình tại Miền Trung - Tây Nguyên</h4>
+					</div>
+					<div class="social">
+						<font color="gray">Đã đăng ký <b><font color="red" size="5px">741</font></b> thí sinh</font>
+					</div>
+				</a>
+			</div>
+			<div class="our-team top2 col-sm-5" title="Cuộc thi ĐẤU SĨ CODER 2021 do tập đoàn FPT tổ chức">
+				<a href="z_fight.html" style="text-decoration: none; color: black;">
+					<div class="picture">
+						<img class="img-fluid ima" src="image/thi2.jpg" alt="Banner Cuộc thi ĐẤU SĨ CODER 2021 do tập đoàn FPT tổ chức">
+					</div>
+					<div class="team-content">
+						<br>
+						<h3 class="name">ĐẤU SĨ CODER 2021</h3>
+						<h4 class="title">Cuộc thi lập trình do FPT tổ chức hằng năm dành cho những người yêu thích lập trình trên thế giới</h4>
+					</div>
+					<div class="social">
+						<font color="gray">Đã đăng ký <b><font color="red" size="5px">1234</font></b> thí sinh</font>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- TÀI LIỆU -->
+	
+	<div class="top">	
+		<div>
+			<h3 id="tieude"><a href="document.html">Tài liệu</a></h3>
+		</div>
+	</div>
+	<div class="top-60 marbott">
+		<div class="col-sm-10">
+			<div class="row">
+				<a href="document.html#ds" title="Tài liệu Khoa học dữ liệu">
+					<div class="col-sm-6">
+						<div class="ani-xoay">
+							<div class="menu"   style="background-image: url(image/ds1.png);"><p class="text-xoay">Tài liệu Khoa học dữ liệu</div></p>
+						</div>
+					</div>
+				</a>
+				<a href="document.html#it" title="Tài liệu Kỹ thuật phần mềm">
+					<div class="col-sm-6">
+						<div class="ani-xoay">
+							<div class="menu"   style="background-image: url(image/it1.png);"><p class="text-xoay">Tài liệu Kỹ thuật phần mềm</p></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			
+			<div class="row" style="margin-top: 7vh;">
+				<a href="document.html#is" title="Tài liệu An toàn thông tin">
+					<div class="col-sm-6">
+						<div class="ani-xoay">
+							<div class="menu"   style="background-image: url(image/is1.png);"><p class="text-xoay">Tài liệu An toàn thông tin</div></p>
+						</div>
+					</div>
+				</a>
+				<a href="document.html#pts" title="Tài liệu Thiết kế đồ họa">
+					<div class="col-sm-6">
+						<div class="ani-xoay">
+							<div class="menu"   style="background-image: url(image/pts1.png);"><p class="text-xoay">Tài liệu Thiết kế đồ họa</div></p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- LUYỆN TẬP + DIỄN ĐÀN -->
+	
+	<div class="top marbott">
+		<div class="row">
+			
+			<!-- LUYỆN TẬP -->
+			
+			<div class="col-sm-8">
+				<div>
+					<h3 id="tieude1"><a href="train.html">Luyện tập</a></h3>
+				</div>
+				<a href="z_train.html" style="text-decoration: none; color: black;">
+					<div class="top1 giua" title="Bài tập maxArray">
+						<br><h5>maxArray</h5>
+						<br><p><span class="badge badge-success">Đơn giản</span></p>
+						<br><p><span class="badge badge-secondary">array</span>
+								<span class="badge badge-secondary">algorithm</span>
+								<span class="badge badge-secondary">sequence</span></p>
+						<img src="./image/luyentap1.svg" alt="Image Huy hiệu luyện tập 1">
+						<span class="tacgia"><i>@NguyenPhuocThinh</i></span>
+					</div>
+				</a>
+				<a href="z_train.html" style="text-decoration: none; color: black;">
+					<div class="top1 giua" title="Bài tập createNumber">
+						<br><h5>createNumber</h5>
+						<br><p><span class="badge badge-warning">Trung bình</span></p>
+						<br><p><span class="badge badge-secondary">array</span>
+								<span class="badge badge-secondary">algorithm</span>
+								<span class="badge badge-secondary">sequence</span></p>
+						<img src="./image/luyentap2.svg" alt="Image Huy hiệu luyện tập 2">
+						<span class="tacgia"><i>@NguyenPhuocThinh</i></span>
+					</div>
+				</a>
+				<a href="z_share.html" style="text-decoration: none; color: black;">
+					<div class="top1 giua" title="Bài tập minSwaps">
+						<br><h5>minSwaps</h5>
+						<br><p><span class="badge badge-danger">Siêu khó</span></p>
+						<br><p><span class="badge badge-secondary">array</span>
+								<span class="badge badge-secondary">algorithm</span>
+								<span class="badge badge-secondary">sequence</span></p>
+						<img src="./image/luyentap3.svg" alt="Image Huy hiệu luyện tập 3">
+						<span class="tacgia"><i>@NguyenPhuocThinh</i></span>
+					</div>
+				</a>
+			</div>
+				
+			<!-- DIỄN ĐÀN -->
+				
+			<div class="col-sm-4">
+				<h3 id="tieude3"><a href="forum.html">Thảo luận</a></h3><br>
+				<div class="diendan">
+					<div class="jumbotron pcmtt bg-white">
+						<form action="#!">
+							<div class="form-group">
+								<div id="editor" class="bg-bluedark text-white" style="border-radius:5px;"><br><br><br><br></div>
+							</div>
+							<button type="submit" class="btn btn-danger marbtncmt">Bình luận</button>
+						</form>
+						<br>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- BANNER SỐ -->
+	
+	<div class="topfull" style="background: url(./image/bannerfull.jpg); background-size: cover;background-position: center;">
+        <div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="main_achieve">
+                        <div>
+                            <div class="number_icon">
+                                <i class="fas fa-user-graduate icon_title icon_adv icon_color"></i><span class="number_grand">9999+</span>
+                            </div>
+                            <span class="title_achieve">Học viên đã đăng ký</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="main_achieve">
+                        <div>
+                            <div class="number_icon">
+                                <i class="far fa-address-card icon_title icon_adv icon_color"></i><span class="number_grand">666+</span>
+                            </div>
+                            <span class="title_achieve">Chuyên gia tham gia giảng dạy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="main_achieve">
+                        <div>
+                            <div class="number_icon">
+                                <i class="fas fa-comments-dollar icon_title icon_adv icon_color"></i><span class="number_grand">33+</span>
+                            </div>
+                            <span class="title_achieve">Đơn vị tài trợ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div style="display: flex;justify-content: center;">
+                <a class="btn btn-danger" href="#!">Tham gia khóa học</a>
+            </div><br>
+        </div>
+    </div>
+	
+	<!-- BANNER 2 -->
+	
+	<div class="top">
+		<div class="banner">
+			<img src="./image/banner.jpg" alt="Banner">
+		</div>
+	</div>
+	
+	<!-- MADE WITH -->
+	
+	<div class="topmadewith">
+        <div>
+			<h1 class="madewith">Made with<i class="fas fa-heartbeat"></i></h1>
+             <p class="pmade">Tại FlashCode, nhiệm vụ của chúng tôi là giúp bạn cải thiện bản thân và đạt được công việc mơ ước. Đừng chần chừ! Hãy bắt đầu tham gia khóa học ngay ngày hôm nay.</p>
+        </div>
+    </div>
+	
+	<!-- ĐỘI NGŨ -->
+	<div class="top text-center padbott">
+		<div class="col-lg-12">
+			<br><br>
+			<h4>ĐƠN VỊ TÀI TRỢ</h4>
+			<div class=form-row>
+				<div class="col-lg-2">
+					<div class="doingu">
+						<img src="./image/bka.png" class="img-thumbnail img-doingu">
+						<div class="overlay">
+							<div class="text-doingu">
+								<h4 class="text-yellow">BKA</h4>
+								<p class="text-white">Trường ĐH Bách Khoa TP. HCM</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="doingu">
+						<img src="./image/vku.png" class="img-thumbnail img-doingu">
+						<div class="overlay">
+							<div class="text-doingu">
+								<h4 class="text-yellow">VKU</h4>
+								<p class="text-white">Trường ĐH CNTT&TT Việt - Hàn</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="doingu">
+						<img src="./image/bka.png" class="img-thumbnail img-doingu">
+						<div class="overlay">
+							<div class="text-doingu">
+								<h4 class="text-yellow">BKA</h4>
+								<p class="text-white">Trường ĐH Bách Khoa TP. HCM</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="doingu">
+						<img src="./image/vku.png" class="img-thumbnail img-doingu">
+						<div class="overlay">
+							<div class="text-doingu">
+								<h4 class="text-yellow">VKU</h4>
+								<p class="text-white">Trường ĐH CNTT&TT Việt - Hàn</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="doingu">
+						<img src="./image/bka.png" class="img-thumbnail img-doingu">
+						<div class="overlay">
+							<div class="text-doingu">
+								<h4 class="text-yellow">BKA</h4>
+								<p class="text-white">Trường ĐH Bách Khoa TP. HCM</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="doingu">
+						<img src="./image/vku.png" class="img-thumbnail img-doingu">
+						<div class="overlay">
+							<div class="text-doingu">
+								<h4 class="text-yellow">VKU</h4>
+								<p class="text-white">Trường ĐH CNTT&TT Việt - Hàn</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	
+	<!-- FOOTER -->
+	
+	<footer class="bg-light text-center text-bla bor">
+		<div class="container p-4">
+			<section class="mb-4">
+				<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn btn-outline-info btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+				<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+				<a class="btn btn-outline-purple btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+				<a class="btn btn-outline-primary btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+				<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+			</section>
+			<section class="">
+				<form action="#!">
+					<div class="row d-flex justify-content-center">
+						<div class="col-auto">
+							<p class="pt-2">
+								<strong>Đăng ký Email nhận tin mới:</strong>
+							</p>
+						</div>
+						<div class="col-md-5 col-12">
+							<div class="form-outline form-whi mb-4">
+								<input type="email" id="form5Example2" class="form-control" />
+							</div>
+						</div>
+						<div class="col-auto">
+							<button type="submit" class="btn btn-outline-x mb-4">
+								Đăng ký
+							</button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section class="mb-4">
+				<p>
+					FlashCode là nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách <br>nhanh chóng và chính xác.
+				</p>
+			</section>
+			<section style="text-align: left;">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+						<h4 class="text-red">THÔNG TIN</h4>
+						<ul class="list-unstyled mb-0 footinfo">
+							<li>
+								<i class="fas fa-map-marker-alt text-red"> </i>
+								<a href="#!" class="text-bla"> &nbsp;470 Trần Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</a>
+							</li>
+							<li>
+								<i class="fas fa-phone text-red"> </i>
+								<a href="#!" class="text-bla"> 0973309606</a>
+							</li>
+							<li>
+								<i class="far fa-envelope text-red"> </i>
+								<a href="#!" class="text-bla"> npthinh.20it2@vku.udn.vn</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h4 class="text-x">LIÊN KẾT</h4>
+						<ul class="list-unstyled mb-0 foot">
+							<li>
+								<a href="learn.html" class="text-bla">Khóa học</a>
+							</li>
+							<li>
+								<a href="train.html" class="text-bla">Luyện tập</a>
+							</li>
+							<li>
+								<a href="fight.html" class="text-bla">Thi đấu</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot">
+						<h4 class="text-x">HỖ TRỢ</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="document.html" class="text-bla">Tài liệu</a>
+							</li>
+							<li>
+								<a href="share.html" class="text-bla">Chia sẻ</a>
+							</li>
+							<li>
+								<a href="tool.html" class="text-bla">Thủ thuật</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot">
+						<h4 class="text-x">TRỢ GIÚP</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="forum.html" class="text-bla">Diễn đàn</a>
+							</li>
+							<li>
+								<a href="aboutus.html" class="text-bla">Về chúng tôi</a>
+							</li>
+							<li>
+								<a href="contact.html" class="text-bla">Liên hệ với chúng tôi</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="text-center p-3 text-whi" style="background-color: rgba(0, 0, 0);">
+			Cung cấp bởi <a class="text-whi" href="#!">THINHVKU</a> © 2021 Copyright. Sắp đăng ký bản quyền rev 04/11/2021 9:11:02 PM
+		</div>
+	</footer>
+	
+	<!-- JavaScript -->
+	
+	<script>
+		InlineEditor
+			.create( document.querySelector( '#editor' ) )
+			.catch( error => {
+            console.error( error );
+			} );
+	</script>
+	
+	
+</body>
+</html>

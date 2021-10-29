@@ -1,0 +1,68 @@
+.topp { width: 85%; margin: auto; }
+
+.headdoc { padding: 3% 5%; display: flex; flex-direction: column; text-align: center; justify-content: center; margin-bottom: 60px; padding: 60px; }
+
+.menu .menu-tab .nav.nav-pills .nav-link { color: #fff; background: #dc3545; border-radius: 5px; margin: 0 5px; }
+
+.menu .menu-tab .nav.nav-pills .nav-link:hover { background: #2c31cf; }
+
+.menu .menu-tab .nav.nav-pills .nav-link.active { border-bottom: solid 4px black; background: #dc3545; }
+
+.top1 { width: 45%; float: left; margin: 10px; background-color: white; border-radius: 15px; }
+
+.top1 { box-shadow:5px 5px 5px  gray; }
+
+.top1 img:hover { transition: 0.5s; image-rendering: pixelated; }
+
+.top1 h5:hover { cursor: pointer; color : #2c31cf; }
+
+.top1 i { padding: 5px 0px 0px 5px; }
+
+.top1 p { padding: 0px 5px; color: gray; }
+
+.file { display: flex; align-items: center; }
+
+.padd-topp{ padding-top:30px;}
+.padd-bott1{ padding-bottom:20px;}
+.padd-bott2{ padding-bottom:80px;}
+
+.logomenu { width:100%; margin-top:-200px; image-rendering: pixelated; }
+
+@media screen and (max-width: 640px) {
+
+	[class*="col-md-"] {
+		width: 100%;
+	}
+	.headdoc {
+		padding-top:10px;
+		padding-bottom:5%;
+	}
+	
+	.ds {
+		width:40%;
+		padding-bottom:10px;
+	}
+	.top1 {
+		width:100%;
+		margin: 20px 0px;
+		padding:5px;
+	}
+	h5 {
+		padding-top:5px;
+		text-align:center;
+	}
+	.ppp {
+		text-align:center;
+	}
+	.p {
+		text-align:justify;
+	}
+}
+
+@media screen and (max-width: 758px) and (min-width: 641px {
+	
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px {
+	
+}

@@ -1,0 +1,15 @@
+
+
+.topp { width: 85%; margin: auto; }
+
+.toptrain { width: 100%; background-color: white; box-shadow:3px 3px 3px  gray; }
+
+.toptrain:hover { box-shadow:5px 5px 5px  gray; }
+
+.toptrain p { padding-left: 15px; }
+
+.padd-bott { padding-bottom:100px; }
+
+.mar-topp { margin-top: 15px; }
+
+.aaa { margin: 15px; }

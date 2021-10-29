@@ -1,0 +1,30 @@
+.topp { width: 85%; margin: auto; }
+
+.iii {
+	width:100%;
+	/* bo tròn avt */
+	border-image: solix red 1px;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+}
+.topforum { width: 100%; float: left; background-color: white; border-radius: 25px; }
+
+.topforum h3 { padding: 20px 50px 0px; }
+
+.topforum p { padding: 0px 50px 10px;}
+
+.topp h3 a { color:black; text-decoration: none; }
+
+.tieude {float:left; color: #2c31cf; margin-bottom: 50px;}
+.tieude:hover { text-decoration: underline; }
+
+.mar-bott1 { margin-bottom: 30px; margin-top: 30px;}
+
+.mar-bott2 { margin-bottom: 120px;}
+
+.topforum1 { width: 100%; float: left; border-radius: 25px; background-color: #FFFF99;	}
+
+.topforum1 p { padding: 20px 50px 20px; }
+
+.topforum1 span { margin: 0px 0px 20px 50px; }

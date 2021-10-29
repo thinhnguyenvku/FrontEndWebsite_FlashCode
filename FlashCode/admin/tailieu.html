@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Quản lý tài liệu</title>
+	<link rel="icon" type="img/png" href="image/flash.jpg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="sidebar">
+			<img src="./image/flash.jpg" class="logo">	
+			<h2 class="tieude text-center">ADMIN</h2>	
+			<ul>
+				<li><a href="taikhoan.html"><i class="fas fa-tools"></i> Tài khoản</a></li>
+				<li><a href="khoahoc.html"><i class="fas fa-graduation-cap"></i> Khóa học</a></li>
+				<li><a href="luyentap.html"><i class="fas fa-chalkboard-teacher"></i> Luyện tập</a></li>
+				<li><a href="thidau.html"><i class="fas fa-graduation-cap"></i> Thi đấu</a></li>
+				<li><a href="diendan.html"><i class="fas fa-blog"></i></i> Diễn đàn</a></li>
+				<li class="gachphai"><a href="tailieu.html"><i class="fas fa-chalkboard-teacher"></i> Tài liệu</a></li>
+				<li><a href="chiase.html"><i class="fas fa-blog"></i> Chia sẻ</a></li>
+				<li><a href="thuthuat.html"><i class="fas fa-tools"></i> Thủ thuật</a></li>
+			</ul> 
+			<div class="icon">
+				<a class="btn btn-primary btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn btn-info btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+				<a class="btn btn-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+			</div>
+		</div>
+		<div class="main_content">
+			<br><br>
+			<div class="container"> 
+				<div class="row"> 
+					<div class="col-md-12 col-md-offset-1"> 
+						<div class="panel panel-default panel-table"> 
+							<div class="panel-heading"> 
+								<div class="row"> 
+									<div class="col col-xs-6"> 
+										<h2 class="panel-title">Danh sách tài liệu</h2> 
+									</div> 
+									<div class="col col-xs-6 text-right"> 
+										<button type="button" class="btn btn-sm btn-outline-x btn-create">Lưu lại</button> 
+									</div> 
+								</div> 
+							</div>
+							<br><br>
+							<div class="panel-body"> 
+								<table class="table table-striped table-bordered table-list table-primary"> 
+									<thead> 
+										<tr class="text-center"> 
+											<th><i class="fa fa-cog"></i></th> 
+											<th>Mã số</th> 
+											<th>Tên tài liệu</th> 
+											<th>Loại tài liệu</th>
+											<th>Lượt xem</th>
+											<th>Lượt tải</th>
+										</tr> 
+									</thead> 
+									<tbody>
+										<tr> 
+											<td align="center">
+												<a class="btn btn-danger"><i class="fas fa-pencil-alt"></i></a>
+											</td> 
+											<td align="center">105</td> 
+											<td>Học máy với Python</td>
+											<td>Khoa học dữ liệu</td>
+											<td  class="text-center">999</td>
+											<td class="text-center">111</td>
+										</tr> 
+										<tr> 
+											<td align="center">
+												<a class="btn btn-danger"><i class="fas fa-pencil-alt"></i></a>
+											</td> 
+											<td align="center">104</td> 
+											<td>Clean Code</td>
+											<td>Kỹ thuật phần mềm</td>
+											<td  class="text-center">555</td>
+											<td class="text-center">555</td>
+										</tr>
+										<tr> 
+											<td align="center">
+												<a class="btn btn-danger"><i class="fas fa-pencil-alt"></i></a>
+											</td> 
+											<td align="center">103</td> 
+											<td>Hacker Lược Sử</td>
+											<td>An toàn thông tin</td>
+											<td  class="text-center">666</td>
+											<td class="text-center">444</td>
+										</tr>
+										<tr> 
+											<td align="center">
+												<a class="btn btn-danger"><i class="fas fa-pencil-alt"></i></a>
+											</td> 
+											<td align="center">102</td> 
+											<td>Thiết kế Logo</td>
+											<td>Thiết kế đồ họa</td>
+											<td  class="text-center">888</td>
+											<td class="text-center">444</td>
+										</tr>
+										<tr> 
+											<td align="center">
+												<a class="btn btn-danger"><i class="fas fa-pencil-alt"></i></a>
+											</td> 
+											<td align="center">101</td> 
+											<td>Học sâu với Python</td>
+											<td>Khoa học dữ liệu</td>
+											<td  class="text-center">777</td>
+											<td class="text-center">333</td>
+										</tr>
+									</tbody>
+								</table> 
+							</div>							
+						</div>
+						<br><br>
+						
+						<!-- THANH CHUYỂN TRANG -->
+			
+						<div class="topp padd-bott2">
+							<ul class="pagination">
+							  <li class="page-item"><a class="page-link" style="margin-left:-4px;" href="#">Trang trước</a></li>
+							  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+							  <li class="page-item"><a class="page-link" href="#">2</a></li>
+							  <li class="page-item"><a class="page-link" href="#">3</a></li>
+							  <li class="page-item"><a class="page-link" href="#">4</a></li>
+							  <li class="page-item"><a class="page-link" href="#">6</a></li>
+							  <li class="page-item"><a class="page-link" href="#">7</a></li>
+							  <li class="page-item"><a class="page-link" href="#">8</a></li>
+							  <li class="page-item"><a class="page-link" href="#">9</a></li>
+							  <li class="page-item"><a class="page-link" href="#">Trang tiếp theo</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<br><br><br>
+					
+					<div class="col-md-12 col-md-offset-1">
+						<br><br><br>
+						<h2 class="panel-title">Tạo tài liệu mới</h2>
+						<br><br>
+						<div class="form-row bg-white">
+							<div class="col-6">
+								<br>
+								<label>Nhập tên tài liệu <font color="red">*</font></label>
+									<input type="text" class="form-control mb-4">
+								<select class="form-control col-lg-5" id="sel1" name="sellist1">
+									<option>Chọn loại tài liệu</option>
+									<option>Khoa học dữ liệu</option>
+									<option>Kỹ thuật phầm mềm</option>
+									<option>An toàn thông tin</option>
+									<option>Thiết kế đồ họa</option>
+								</select>
+								<br>
+								<label>Nhập mô tả ngắn <font color="red">*</font></label>
+									<input type="text" class="form-control mb-4">
+								<label>Nhập link file tài liệu (tải lên google drive, đặt chế độ công khai) <font color="red">*</font></label>
+									<input type="text" class="form-control mb-4">
+								<button type="button" class="btn btn-outline-danger">Tạo mới</button>
+							</div>
+							<div class="col-6">
+								<img src="./image/thuthuat1.png" style="width:75%; margin-left:60px;">
+							</div>
+						</div>
+						<br><br><br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

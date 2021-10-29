@@ -1,0 +1,30 @@
+.topp { width: 85%; margin: auto; }
+
+.topshare img { width: 100%; padding: 20px; }
+
+.topshare h2 { padding: 20px; }
+
+.topshare h4 { padding: 20px; }
+
+.topshare p { padding: 0px 20px; }
+
+.tieude a { color: black; float: left; text-decoration: none; }
+
+.topkhac hr { width: 40px; height: 2px; float: left; }
+
+.topkhac ul { list-style-type: none; float: left; }
+
+.topkhac img { width: 110px; height: 75px; }
+
+.topkhac img:hover { image-rendering: pixelated; }
+
+.topkhac li { padding: 10px; width: 100%; border-bottom: 1px solid; display: flex; background-color: white; }
+
+.topkhac p { margin-left: 10px; }
+
+.topkhac li:hover { cursor: pointer; background-color: #DDDDDD; color: #2c31cf; }
+
+.mar-bott { margin-bottom: 80px; margin-top: 30px;}
+
+.tieude {color: #2c31cf;}
+.tieude:hover { text-decoration: underline; }

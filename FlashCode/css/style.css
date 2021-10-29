@@ -1,0 +1,184 @@
+body { background-color:#EEEEEE; }
+
+/* Thanh navi */
+.logo { width:234px; margin-left:20px; image-rendering: pixelated; }
+.navbar { margin: 0; padding: 0; font-size: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4); }
+.sel a, .nav-item a { color:black;}
+.sel1 a:hover, .nav-item a:hover { background-color: #DDDDDD; color:#2c31cf; border-bottom: solid 2px rgb(0, 81, 255); }
+.menu:focus { outline:0 ;}
+.giua { text-align: center; box-shadow:10px 10px 10px gray; }
+
+.dropdown:hover .dropdown-menu { display: block; }
+
+.navigation { display: none; }
+
+/* tỉ lệ div lớn */
+.top { width: 85%; margin: auto; }
+.topfull { width: 100%; margin: auto; }
+.topbanner { width: 98%; margin: auto;}
+.topmadewith { width:60%; margin:auto; text-align:center; padding-bottom:20px; }
+.top-60 { width: 60%; margin:auto; }
+.top-70 { width: 70%; margin:auto; }
+
+#tieude { padding-top: 50px; color : #2c31cf; margin-left: 10px; }
+#tieude:hover { text-decoration: underline; }
+
+#top11 {margin-top: 0px;}
+#tieude1 { padding-top: 50px; color : #2c31cf; margin-left: 10px; }
+#tieude2 { padding-top: 50px; color : #2c31cf; margin-left: 50px; }
+#tieude3 { padding-top: 50px; color : #2c31cf; margin-left: 10px; }
+#tieude1:hover,#tieude2:hover,#tieude3:hover { text-decoration: underline; }
+
+
+/* footer */
+
+.whi:hover { color:white; }
+.btn-outline-purple { color: purple; border-color: purple; }
+.btn-outline-purple:hover { background-color: purple; }
+.text-x { color: #2c31cf; }
+.text-whi { color: white; }
+.text-bla { color: black; }
+.btn-outline-x { color: #2c31cf; border-color: #2c31cf; }
+.btn-outline-x:hover { color:white; background-color:#2c31cf; border-color:#2c31cf; }
+.bor { border-top-width: 0.1px; border-top-style: solid; border-top-color: black; }
+
+.padbott { padding-bottom: 120px; }
+.marbott { margin-bottom:50px;}
+.marbtnlg { margin-top: 7px; }
+.marbtncmt { margin-top: 15px; }
+.gachchan { border-bottom: solid 2px rgb(0, 81, 255); }
+.tacgia i { color: #2c31cf; }
+.tacgia:hover i { cursor:pointer; text-decoration: underline;}
+.bg-white { background-color: #00FFFF}
+.bg-bluelight { background-color: rgb(240, 245, 255); }
+.bg-graylight { background-color: #d5d0d0; }
+.bg-blue1 { background: #2e3d75; }
+
+.foot a:hover { color: #2c31cf;}
+
+.text-red { color: red; }
+
+.text-danger { color: #dc3545; }
+
+.footinfo a:hover { text-decoration: none; color: #2c31cf; }
+
+.text-yellow { color: #ffc107; }
+
+.bg-bluedark { background-color: #191970 }
+
+/* NÚT QUAY VỀ ĐẦU TRANG JS */
+#back-to-top { cursor: pointer; position: fixed; bottom: 0px; right: 10px; color: #fff; padding: 15px; }
+#back-to-top i { color:  #2c31cf;}
+#back-to-top i:hover { color:  #dc3545;}
+
+
+/* cover thanh chuyển trang bootstrap */
+.page-link { color:#2c31cf; }
+.page-item.active .page-link { color: #fff; background-color: #2c31cf; border-color: #2c31cf; }
+
+
+
+.zback i { cursor: pointer; float: left; margin: 7px 5px 0px 20px; }
+.zback h5:hover, .zback i:hover { color:  #2c31cf;}
+.zback h5 { margin-top: 20px}
+.zback a { text-decoration: none; color: black; }
+
+
+
+.alo{ border: 1px solid #ddd; border-radius: 4px; padding: 5px; width: 100%; }
+.alo:hover { box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); }
+
+.ima { border-radius: 2%; overflow: hidden; transition: all 0.5s ease 0s; position: relative; }
+.ima:hover { transform:scale(1.1); box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); }
+
+
+
+.vip {text-align:center;}
+
+@media screen and (max-width: 1000px) {
+	.navbar {
+		text-align:center;
+		width:100%;
+	}
+	.logo{text-align:center;}
+	.dropdown-item {text-align:center;}
+	.navbar-toggler {
+		padding-right:50px;
+	}
+	.dropdown-toggle{
+		width:100%;
+	}
+
+	[class*="col-sm-"] {
+		width: 100%;
+	}
+	.text-red, .text-x, .list-unstyled {
+		text-align:center;
+	}
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 1440px){
+	
+}
+@media screen and (max-width: 640px) {
+
+	[class*="col-sm-"] {
+		width: 100%;
+	}
+	
+	.top1 {
+		width:80%;
+		text-align:justify;
+		margin:15px;
+		
+	}
+	.col-sm-8{
+		padding-left:40px;
+	}
+	#tieude1 {
+		padding-top:10px;
+		padding-bottom:10px;
+		padding-left:70px;
+	}
+	#tieude2{
+		padding-bottom:10px;
+		padding-left:90px;
+	}
+	#tieude {
+		padding-bottom:30px;
+		padding-left:110px;
+		padding-top:70px;
+	}
+	.col-sm-4 {
+		padding-left:0px;
+		padding-right:40px;
+	}
+	#tieude3 {
+		padding-bottom:10px;
+		padding-left:110px;
+	}
+	.diendan {
+		padding-left:35px;
+	}
+	.banner {
+		padding-top:20px;
+	}
+	
+	.top-60 { 
+		width: 80%; 
+		margin:auto; 
+	}
+	.madewith {
+		padding-top:40px;
+	}
+}
+
+@media screen and (max-width: 758px) and (min-width: 641px {
+	
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px {
+	
+}

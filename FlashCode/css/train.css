@@ -1,0 +1,74 @@
+.headtrain { width:100%; image-rendering: pixelated; }
+.topp { width: 85%; margin: auto; }
+.toptrain { width: 22%; float: left; margin: 20px 16px; background-color: white; box-shadow:8px 8px 8px  gray; }
+.toptrainselect { width: 22%; float: left; margin: 16px 56px 16px -15px; }
+.toptraininsert{ width: 22%; float: right; margin: 16px -55px 16px 16px; }
+
+.toptrain img { width: 20%; }
+.toptrain:hover { box-shadow:5px 5px 5px  gray; }
+.toptrain img:hover { transition: 0.5s; image-rendering: pixelated; }
+.toptrain h5:hover{ cursor: pointer; color : #2c31cf; }
+.toptrain h5 { padding: 0px 5px; }
+.toptrain p { padding: 0px 5px; color: gray; }
+
+.padd-bott1 { padding-bottom:40px; }
+.padd-bott2 { padding-bottom:80px; }
+.padd-topp { padding-top:30px; }
+.xxx:hover { background-color: #2c31cf; }
+
+.iconcmt:hover { color:#2c31cf; }
+
+.topp .toptrain a{ text-decoration: none; color: black; }
+
+.ima_train { transition: all 0.5s ease 0s; border-radius: 5%; }
+.ima_train:hover { transform:scale(1.06); }
+
+.dienthoai { display:none; }
+
+@media screen and (max-width: 640px) {
+
+	[class*="col-sm-"] { 
+		width: 100%; 
+	} 
+	marquee {
+		padding-top:10px;
+		padding-bottom:0.3em;
+	}
+	.dienthoai {
+		display:block;
+	}
+	.full {
+		display:none;
+	}
+	.toptraininsert {
+		text-align:center;
+	}
+	.toptrainselect {
+		padding-left:3.3em;
+	}
+	.toptrain {
+		width:100%;
+	}
+	.pagination {
+		font-size:0.8em;
+		margin:0;
+		padding-left:1.4em;
+	}
+
+	.topp {
+		width:90%;
+		margin:0px;
+	}
+	.pd {
+		padding:1rem;
+	}
+}
+
+
+@media screen and (max-width: 758px) and (min-width: 641px {
+	
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px {
+	
+}

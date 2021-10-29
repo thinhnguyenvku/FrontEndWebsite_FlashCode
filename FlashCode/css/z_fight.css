@@ -1,0 +1,16 @@
+.topp { width: 85%; margin: auto; }
+
+.aaa { margin: 22px 15px 8px; float: left; }
+
+.bbb { margin: 15px; float: right; }
+
+.mar-bott1 { margin-bottom: 50px; margin-top: 30px;}
+
+.tieude {float:left; color: #2c31cf; padding: 15px 0px 15px 15px; }
+
+.padd-bott { padding-bottom: 80px; }
+
+.page-link { color:#2c31cf; }
+
+/* Đồng hồ */
+#vnclock{ float: right; font-weight:bold; font-size:20px; color:#red; padding: 19px 15px 11px 0px; }

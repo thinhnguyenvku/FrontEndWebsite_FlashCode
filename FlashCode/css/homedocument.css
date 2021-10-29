@@ -1,0 +1,11 @@
+
+/* Tài liệu */
+
+.ani-xoay { width: 300px; height: 204px; box-shadow: 0 10px 40px 2px rgb(0 0 0 / 40%);  transition: all 0.5s ease-out;
+    animation-iteration-count: infinite; transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg); }
+	
+.ani-xoay:hover { font-weight: 900; animation: unset; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+
+.ani-xoay .menu { display: flex; justify-content: space-around; align-items: center; max-width: 100%; height: 100%; }
+
+.text-xoay { color:#2c31cf;; position: absolute; top: 0%;width: 100%;text-align: center; }

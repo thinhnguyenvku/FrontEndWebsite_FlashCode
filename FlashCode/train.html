@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Luyện tập - Áp dụng kiến thức đã học</title>
+	<link rel="icon" type="img/png" href="image/flash.jpg">
+	<meta name="news_keywords" content="flashcode, khóa học, lập trình, trực tuyến, học lập trình miễn phí, thủ thuật lập trình" />
+	<meta name="description" content="FlashCode - nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách nhanh chóng và chính xác." />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	<script src="./js/btn-top.js"></script>
+	
+	<link rel="stylesheet" href="./css/train.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	
+	<span id="back-to-top">
+		<i class="fas fa-chevron-up fa-2x"></i>
+	</span>
+
+	<!-- NAVIGATION -->
+
+	<nav class="navbar navbar-expand-lg bg-light sticky-top">
+		<a class="navbar-brand" href="index.html"><img src="./image/logo.jpg" alt="logo" class="logo"></a>
+		<button class="navbar-toggler menu" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon">MENU</span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="learn.html" id="navbardrop" data-toggle="dropdown">Khóa học</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="learn.html#section1">Kiến thức cơ sở</a>
+							<a class="dropdown-item" href="learn.html#section2">Lập trình cơ sở</a>
+							<a class="dropdown-item" href="learn.html#section3">Lập trình nâng cao</a>
+							<a class="dropdown-item" href="learn.html#section4">Giải quyết vấn đề</a>
+							<a class="dropdown-item" href="learn.html#section5">Kỹ năng nâng cao</a>
+						</div>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link gachchan" href="train.html">Luyện tập</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="fight.html">Thi đấu</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="forum.html">Diễn đàn</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="document.html">Tài liệu</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="share.html">Chia sẻ</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="tool.html">Thủ thuật</a>
+				</li>
+			</ul>
+			<ul  class="navbar-nav ml-auto">				
+				<li class="dropdown sel">
+					<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img src="https://www.countryflags.io/vn/flat/32.png"></a>
+					<div class="dropdown-menu sel1">
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/vn/flat/32.png">Tiếng Việt</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/gb/flat/32.png">English</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/kr/flat/32.png">한국어</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/jp/flat/32.png">日本語</a>
+					</div>
+				</li>
+				<li class="vip">
+					<form action="account.html" class="vip">
+						<button type="submit" class="btn btn-danger" style="margin: 0px 10px;">
+							Đăng Nhập
+						</button>
+					</form>
+				</li>
+		    </ul>
+		</div>
+	</nav>
+	
+	<!-- HEADER -->
+	<div class="container-fluit">
+		<marquee>
+			<div style="margin-top:10px;">
+				<span style="margin-right:50px;"><font color=red size=5px">9.999.999</font><font color=black> Lượt nộp bài</font></span>
+				<span style="margin-right:50px;"><font color=red size=5px">666.666</font><font color=black> Học viên tham gia</font></span>
+				<span style="margin-right:50px;"><font color=red size=5px">333</font><font color=black> Người tham gia tạo bài tập</font></span>
+				<span style="margin-right:50px;"><font color=red size=5px">999.999+</font><font color=black> Bài tập cấp độ "Đơn giản"</font></span>
+				<span style="margin-right:50px;"><font color=red size=5px">666.666+</font><font color=black> Bài tập cấp độ "Trung bình"</font></span>
+				<span style="margin-right:50px;"><font color=red size=5px">333+</font><font color=black> Bài tập cấp độ "Siêu khó"</font></span>
+			</div>
+		</marquee>
+		<div><img src="./image/headertrain.jpg"class="headtrain"></div>	
+	</div>
+	
+	<!-- THANH SELECT, LEVEL, CREATE -->
+	
+	<div class="topp padd-topp">
+			<div class="row full">
+						<div class="col-sm-12">
+							<div class="col toptrainselect">
+								<select class="form-control" id="sel1" name="sellist1">
+									<option>Trạng thái</option>
+									<option>Đã hoàn thành</option>
+									<option>Chưa hoàn thành</option>
+									<option>Chưa làm</option>
+								</select>
+							</div>
+							<div class="col toptrainselect">
+								<select class="form-control" id="sel1" name="sellist1">
+									<option>Cấp độ</option>
+									<option>Đơn giản</option>
+									<option>Trung bình</option>
+									<option>Siêu khó</option>
+								</select>
+							</div>
+							<div class="col toptraininsert">
+								<!-- Modal của Bootstrap -->
+								<button type="button" class="btn btn-outline-x" data-toggle="modal" data-target="#myModal">
+								Tạo bài tập của bạn
+								</button>
+								<div class="modal" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h4 class="modal-title">Tạo bài tập</h4>
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+											</div>
+											<div class="modal-body">
+												<input type="text" class="form-control mb-4" placeholder="Nhập tên bài tập">
+												<select class="form-control col-6" id="sel1" name="sellist1">
+													<option>Chọn cấp độ</option>
+													<option>Đơn giản</option>
+													<option>Trung bình</option>
+													<option>Siêu khó</option>
+												</select>
+												<br>
+												<p><i>Nhập nội dung bài tập của bạn tại đây:</i></p>	
+												<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+												<i class="fab fa-google-drive iconcmt"></i>
+												<i class="fas fa-paperclip iconcmt"></i>
+												<i class="far fa-file-image iconcmt"></i>
+												<i class="far fa-file-audio iconcmt"></i>
+												<i class="far fa-file-video iconcmt"></i>
+												<br><br>
+												<div class="custom-control custom-checkbox mb-3">
+													<input type="checkbox" class="custom-control-input" id="customCheck">
+													<label class="custom-control-label" for="customCheck">Ẩn danh tác giả?</label>
+												</div>
+											</div>
+											<div class="modal-footer">
+											<button type="button" class="btn btn-danger" data-dismiss="modal">Tạo</button>
+											</div>
+									
+										</div>
+									</div>
+							  </div>
+							</div>
+						</div>
+					</div>
+			<div class="row">
+				<div class="dienthoai">
+					<div class="col-sm-12 row">
+							<div class="col-12 toptrainselect">
+								<select class="form-control" id="sel1" name="sellist1">
+									<option>Trạng thái</option>
+									<option>Đã hoàn thành</option>
+									<option>Chưa hoàn thành</option>
+									<option>Chưa làm</option>
+								</select>
+							</div>
+							<div class="col-12 toptrainselect">
+								<select class="form-control" id="sel1" name="sellist1">
+									<option>Cấp độ</option>
+									<option>Đơn giản</option>
+									<option>Trung bình</option>
+									<option>Siêu khó</option>
+								</select>
+							</div>
+							<div class="col-12 toptraininsert">
+								<!-- Modal của Bootstrap -->
+								<button type="button" class="btn btn-outline-x" data-toggle="modal" data-target="#myModal1">
+								Tạo bài tập của bạn
+								</button>
+								<div class="modal" id="myModal1">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h4 class="modal-title">Tạo bài tập</h4>
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+											</div>
+											<div class="modal-body">
+												<input type="text" class="form-control mb-4" placeholder="Nhập tên bài tập">
+												<select class="form-control col-6" id="sel1" name="sellist1">
+													<option>Chọn cấp độ</option>
+													<option>Đơn giản</option>
+													<option>Trung bình</option>
+													<option>Siêu khó</option>
+												</select>
+												<br>
+												<p><i>Nhập nội dung bài tập của bạn tại đây:</i></p>	
+												<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+												<i class="fab fa-google-drive iconcmt"></i>
+												<i class="fas fa-paperclip iconcmt"></i>
+												<i class="far fa-file-image iconcmt"></i>
+												<i class="far fa-file-audio iconcmt"></i>
+												<i class="far fa-file-video iconcmt"></i>
+												<br><br>
+												<div class="custom-control custom-checkbox mb-3">
+													<input type="checkbox" class="custom-control-input" id="customCheck">
+													<label class="custom-control-label" for="customCheck">Ẩn danh tác giả?</label>
+												</div>
+											</div>
+											<div class="modal-footer">
+											<button type="button" class="btn btn-danger" data-dismiss="modal">Tạo</button>
+											</div>
+									
+										</div>
+									</div>
+							  </div>
+							</div>
+						</div>
+				</div>
+						<!-- BÀI TẬP -->
+						<div class="pd padd-bott1">
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>maxArray</h5></a>
+								<br><p><span class="badge badge-success">Đơn giản</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap1.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>createNumber</h5></a>
+								<br><p><span class="badge badge-warning">Trung bình</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap2.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>minSwaps</h5></a>
+								<br><p><span class="badge badge-danger">Siêu khó</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap3.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>maxof3</h5></a>
+								<br><p><span class="badge badge-success">Đơn giản</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap1.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>	
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>minArray</h5></a>
+								<br><p><span class="badge badge-success">Đơn giản</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap1.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>linkedList</h5></a>
+								<br><p><span class="badge badge-success">Đơn giản</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap1.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>searchFirstNode</h5></a>
+								<br><p><span class="badge badge-warning">Trung bình</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap2.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>circleLinkedList</h5></a>
+								<br><p><span class="badge badge-danger">Siêu khó</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap3.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>	
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>sumEven</h5></a>
+								<br><p><span class="badge badge-success">Đơn giản</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap1.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>sumOld</h5></a>
+								<br><p><span class="badge badge-success">Đơn giản</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap1.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>min1ToN</h5></a>
+								<br><p><span class="badge badge-success">Đơn giản</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap1.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>sortArray</h5></a>
+								<br><p><span class="badge badge-warning">Trung bình</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap2.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>	
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>min1ToN</h5></a>
+								<br><p><span class="badge badge-success">Đơn giản</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap1.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>selectMax</h5></a>
+								<br><p><span class="badge badge-success">Đơn giản</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap1.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>findNum</h5></a>
+								<br><p><span class="badge badge-success">Đơn giản</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap1.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="toptrain giua ima_train">
+								<br><a href="z_train.html"><h5>oderbyArray</h5></a>
+								<br><p><span class="badge badge-success">Đơn giản</span></p>
+								<p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap1.svg"><br>
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+								<form action="z_train.html">
+									<div class="form-row">
+										<div class="col">
+											<button type="submit" class="btn btn-outline-x" style="margin:20px 0px 10px 10px;">Làm ngay</i></button>
+										</div>
+										<div class="col">
+											<span class="badge badge-danger xxx" style="margin:29px 0px 0px 30px; font-size:15px;">Miễn phí</span>
+										</div>
+									</div>
+								</form>
+							</div>	
+				</div>
+			</div>
+	</div>
+	
+	<!-- THANH CHUYỂN TRANG -->
+	
+	<div class="topp padd-bott2">
+		<ul class="pagination">
+		  <li class="page-item"><a class="page-link" href="#">Trang trước</a></li>
+		  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+		  <li class="page-item"><a class="page-link" href="#">2</a></li>
+		  <li class="page-item"><a class="page-link" href="#">3</a></li>
+		  <li class="page-item"><a class="page-link" href="#">4</a></li>
+		  <li class="page-item"><a class="page-link" href="#">6</a></li>
+		  <li class="page-item"><a class="page-link" href="#">7</a></li>
+		  <li class="page-item"><a class="page-link" href="#">8</a></li>
+		  <li class="page-item"><a class="page-link" href="#">9</a></li>
+		  <li class="page-item"><a class="page-link" href="#">Trang tiếp theo</a></li>
+		</ul>
+	</div>
+	
+	<!-- FOOTER -->
+	
+	<footer class="bg-light text-center text-bla bor">
+		<div class="container p-4">
+			<section class="mb-4">
+				<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn btn-outline-info btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+				<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+				<a class="btn btn-outline-purple btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+				<a class="btn btn-outline-primary btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+				<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+			</section>
+			<section class="">
+				<form action="#!">
+					<div class="row d-flex justify-content-center">
+						<div class="col-auto">
+							<p class="pt-2">
+								<strong>Đăng ký Email nhận tin mới:</strong>
+							</p>
+						</div>
+						<div class="col-md-5 col-12">
+							<div class="form-outline form-whi mb-4">
+								<input type="email" id="form5Example2" class="form-control" />
+							</div>
+						</div>
+						<div class="col-auto">
+							<button type="submit" class="btn btn-outline-x mb-4">
+								Đăng ký
+							</button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section class="mb-4">
+				<p>
+					FlashCode là nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách <br>nhanh chóng và chính xác.
+				</p>
+			</section>
+			<section style="text-align: left;">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+						<h4 class="text-red">THÔNG TIN</h4>
+						<ul class="list-unstyled mb-0 footinfo">
+							<li>
+								<i class="fas fa-map-marker-alt text-red"> </i>
+								<a href="#!" class="text-bla"> &nbsp;470 Trần Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</a>
+							</li>
+							<li>
+								<i class="fas fa-phone text-red"> </i>
+								<a href="#!" class="text-bla"> 0973309606</a>
+							</li>
+							<li>
+								<i class="far fa-envelope text-red"> </i>
+								<a href="#!" class="text-bla"> npthinh.20it2@vku.udn.vn</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h4 class="text-x">LIÊN KẾT</h4>
+						<ul class="list-unstyled mb-0 foot">
+							<li>
+								<a href="learn.html" class="text-bla">Khóa học</a>
+							</li>
+							<li>
+								<a href="train.html" class="text-bla">Luyện tập</a>
+							</li>
+							<li>
+								<a href="fight.html" class="text-bla">Thi đấu</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot">
+						<h4 class="text-x">HỖ TRỢ</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="document.html" class="text-bla">Tài liệu</a>
+							</li>
+							<li>
+								<a href="share.html" class="text-bla">Chia sẻ</a>
+							</li>
+							<li>
+								<a href="tool.html" class="text-bla">Thủ thuật</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot">
+						<h4 class="text-x">TRỢ GIÚP</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="forum.html" class="text-bla">Diễn đàn</a>
+							</li>
+							<li>
+								<a href="aboutus.html" class="text-bla">Về chúng tôi</a>
+							</li>
+							<li>
+								<a href="contact.html" class="text-bla">Liên hệ với chúng tôi</a>
+							</li>
+						</ul>
+					</div>
+			
+				</div>
+			</section>
+		</div>
+		<div class="text-center p-3 text-whi" style="background-color: rgba(0, 0, 0);">
+			Cung cấp bởi <a class="text-whi" href="#!">THINHVKU</a> © 2021 Copyright. Sắp đăng ký bản quyền rev 04/11/2021 9:11:02 PM
+		</div>
+	</footer>
+</body>

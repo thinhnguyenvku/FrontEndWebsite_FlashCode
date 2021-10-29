@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Quản lý thủ thuật</title>
+	<link rel="icon" type="img/png" href="image/flash.jpg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="sidebar">
+			<img src="./image/flash.jpg" class="logo">	
+			<h2 class="tieude text-center">ADMIN</h2>
+			<ul>
+				<li><a href="taikhoan.html"><i class="fas fa-tools"></i> Tài khoản</a></li>
+				<li><a href="khoahoc.html"><i class="fas fa-graduation-cap"></i> Khóa học</a></li>
+				<li><a href="luyentap.html"><i class="fas fa-chalkboard-teacher"></i> Luyện tập</a></li>
+				<li><a href="thidau.html"><i class="fas fa-graduation-cap"></i> Thi đấu</a></li>
+				<li><a href="diendan.html"><i class="fas fa-blog"></i></i> Diễn đàn</a></li>
+				<li><a href="tailieu.html"><i class="fas fa-chalkboard-teacher"></i> Tài liệu</a></li>
+				<li><a href="chiase.html"><i class="fas fa-blog"></i> Chia sẻ</a></li>
+				<li class="gachphai"><a href="thuthuat.html"><i class="fas fa-tools"></i> Thủ thuật</a></li>
+			</ul> 
+			<div class="icon">
+				<a class="btn btn-primary btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn btn-info btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+				<a class="btn btn-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+			</div>
+		</div>
+		<div class="main_content">
+			<br><br>
+			<div class="container"> 
+				<div class="row"> 
+					<div class="col-md-12 col-md-offset-1"> 
+						<div class="panel panel-default panel-table"> 
+							<div class="panel-heading"> 
+								<div class="row"> 
+									<div class="col col-xs-6"> 
+										<h2 class="panel-title">Danh sách thủ thuật</h2> 
+									</div> 
+									<div class="col col-xs-6 text-right"> 
+										<button type="button" class="btn btn-sm btn-outline-x btn-create">Lưu lại</button> 
+									</div> 
+								</div> 
+							</div>
+							<br><br>
+							<div class="panel-body"> 
+								<table class="table table-striped table-bordered table-list table-primary"> 
+									<thead> 
+										<tr class="text-center"> 
+											<th><i class="fa fa-cog"></i></th> 
+											<th class="hidden-xs">Mã số</th> 
+											<th>Tên tool</th> 
+											<th>Lượt sử dụng</th>
+											<th>Phí/1 lượt (VND)</th>
+										</tr> 
+									</thead> 
+									<tbody>
+										<tr> 
+											<td align="center">
+												<a class="btn btn-danger"><i class="fas fa-pencil-alt"></i></a>
+											</td> 
+											<td class="hidden-xs" align="center">2</td> 
+											<td>Tool tính nhanh điểm tổng kết theo thang 4</td> 
+											<td  class="text-center">1.111.111</td>
+											<td class="text-center">Free</td>
+										</tr> 
+										<tr> 
+											<td align="center">
+												<a class="btn btn-danger"><i class="fas fa-pencil-alt"></i></a>
+											</td> 
+											<td class="hidden-xs" align="center">1</td> 
+											<td>Tool chuyển đổi ngôn ngữ lập trình</td> 
+											<td class="text-center">999</td> 
+											<td class="text-center">10.000</td>
+										</tr> 
+									</tbody>
+								</table> 
+							</div>							
+						</div>	
+					</div>
+					
+					<br><br><br>
+					
+					<div class="col-md-12 col-md-offset-1">
+						<br><br><br>
+						<h2 class="panel-title">Tạo thủ thuật mới</h2>
+						<br><br>
+						<div class="form-row bg-white">
+							<div class="col-6">
+								<br>
+								<label>Nhập tên thủ thuật <font color="red">*</font></label>
+									<input type="text" class="form-control mb-4">
+								<label>Nhập mô tả thủ thuật <font color="red">*</font></label>
+									<input type="text" class="form-control mb-4">
+								<br>
+								<label>Nhập mức phí <font color="red">*</font></label>
+									<input type="text" class="form-control mb-4">
+								<label>Nhập link source (tải lên google drive, đặt chế độ công khai) <font color="red">*</font></label>
+									<input type="text" class="form-control mb-4">
+								<button type="button" class="btn btn-outline-danger">Tạo mới</button>
+							</div>
+							<div class="col-6">
+								<img src="./image/thuthuat1.png" style="width:85%; margin-left:60px;">
+							</div>									
+						</div>
+						<br><br><br><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

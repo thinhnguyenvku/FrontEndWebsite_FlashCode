@@ -1,0 +1,64 @@
+.headlearn { padding: 3% 5%; display: flex; flex-direction: column; text-align: left; justify-content: center; margin-bottom: 30px; padding: 30px; }
+.aaa { margin-top:40px; }
+.bbb {margin-top:42px; margin-left:-48px; }
+.a-black a { color:#2c31cf; }
+.bbb:hover{ color:red; }
+
+.topp { width: 85%; margin: auto; }
+
+#tieudelearn { padding-top: 20px; color : #2c31cf; margin-left: 16px; }
+#tieudelearn:hover { text-decoration: underline; }
+#topx { margin-top: 0px; }
+
+.toplearn { width: 22%; float: left; margin: 16px; background-color: white; }
+.toplearn img { width: 100%; height: 150px; }
+.toplearn:hover { box-shadow:5px 5px 5px  gray; }
+.toplearn img:hover { transition: 0.5s; image-rendering: pixelated; }
+.toplearn h5:hover { cursor: pointer; color : #2c31cf; }
+.toplearn h5 { padding: 0px 5px; }
+.toplearn p { padding: 0px 5px; color: gray; }
+
+.padd-bott{ padding-bottom:30px;}
+
+.topp a{ text-decoration: none; color: black; }
+
+.ima_learn { transition: all 0.5s ease 0s; border-radius: 5%; }
+.ima_learn:hover { transform:scale(1.04); }
+
+
+@media screen and (max-width: 640px) {
+
+	[class*="col-"] { 
+		width: 100%; 
+	} 
+	.text-whi {
+		text-align:center;
+	}
+	.head {
+		margin:-20px 50px 20px 30px;
+		width:100%;
+	}
+	.headlearn {
+		padding-top:10px;
+		padding-bottom:0px;
+	}
+	.a-black {
+		width:100%;
+	}
+	
+	.toplearn {
+		width:100%;
+		margin: 15px 0px;
+	}
+	#tieudelearn {
+		text-align:center;
+	}
+}
+
+@media screen and (max-width: 758px) and (min-width: 641px {
+	
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px {
+	
+}

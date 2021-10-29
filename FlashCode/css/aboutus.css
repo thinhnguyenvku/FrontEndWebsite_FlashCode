@@ -1,0 +1,53 @@
+.topp { width: 85%; margin: auto; }
+
+.a1 h1 { margin: 60px 0px 30px 30px; color:#2c31cf; }
+
+.a1 p { margin: 30px 0px 30px 30px; color:black; }
+
+.a1 img { box-shadow: 1px 1px 1px 1px gray; }
+
+.a2 h1 { margin: 60px 30px 30px 0px; color:#2c31cf; }
+
+.a2 p { margin: 30px 30px 30px 0px; color:black; }
+
+.a2 img { margin: 40px 0px 40px 0px }
+
+.a3 h1 { margin: 60px 0px 30px 30px; color:#2c31cf; }
+
+.a3 p { margin: 30px 0px 30px 30px; color:black; }
+
+.a3 img { margin: 30px 0px 30px 0px }
+
+.bannerabout { padding: 3% 5%; display: flex; flex-direction: column; text-align: center; justify-content: center; margin-bottom: 50px; padding: 70px; }
+
+.top60{ width: 65%; margin: auto; }
+
+
+.a4 h1 { margin-bottom: 25px; color:#2c31cf;}
+
+.padd-bott { padding-bottom:100px; }
+
+.doingu { position: relative; width: 100%; }
+
+.img-doingu { display: block; width:100%; }
+
+.overlay { position: absolute; bottom: 100%; left: 0; right: 0; background:rgba(0,0,0,0.7);
+	overflow: hidden; width: 100%; height:0; transition: .5s ease; }
+
+.doingu:hover .overlay { bottom: 0; height: 100%; cursor: pointer; }
+
+.text-doingu { font-size: 15px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+
+.ima_aboutus {
+	  transition: all 0.5s ease 0s;
+	  
+}
+.ima_aboutus:hover {
+		  transform:scale(1.1);		  
+}
+
+
+.text {
+	text-align: justify;
+	font-size: 18px;
+}

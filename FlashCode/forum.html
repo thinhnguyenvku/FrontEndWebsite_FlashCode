@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Diễn đàn - Thảo luận về lập trình</title>
+	<link rel="icon" type="img/png" href="image/flash.jpg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	
+	<script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/inline/ckeditor.js"></script>
+	
+	<script src="./js/btn-top.js"></script>
+	
+	<link rel="stylesheet" href="./css/forum.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	
+	<span id="back-to-top">
+		<i class="fas fa-chevron-up fa-2x"></i>
+	</span>
+
+	<!-- NAVIGATION -->
+
+	<nav class="navbar navbar-expand-lg bg-light sticky-top">
+		<a class="navbar-brand" href="index.html"><img src="./image/logo.jpg" alt="logo" class="logo"></a>
+		<button class="navbar-toggler menu" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon">MENU</span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="learn.html" id="navbardrop" data-toggle="dropdown">Khóa học</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="learn.html#section1">Kiến thức cơ sở</a>
+							<a class="dropdown-item" href="learn.html#section2">Lập trình cơ sở</a>
+							<a class="dropdown-item" href="learn.html#section3">Lập trình nâng cao</a>
+							<a class="dropdown-item" href="learn.html#section4">Giải quyết vấn đề</a>
+							<a class="dropdown-item" href="learn.html#section5">Kỹ năng nâng cao</a>
+						</div>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="train.html">Luyện tập</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="fight.html">Thi đấu</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link gachchan" href="forum.html">Diễn đàn</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="document.html">Tài liệu</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="share.html">Chia sẻ</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="tool.html">Thủ thuật</a>
+				</li>
+			</ul>
+			<ul  class="navbar-nav ml-auto">				
+				<li class="dropdown sel">
+					<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img src="https://www.countryflags.io/vn/flat/32.png"></a>
+					<div class="dropdown-menu sel1">
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/vn/flat/32.png">Tiếng Việt</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/gb/flat/32.png">English</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/kr/flat/32.png">한국어</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/jp/flat/32.png">日本語</a>
+					</div>
+				</li>
+				<li class="vip">
+					<form action="account.html" class="vip">
+						<button type="submit" class="btn btn-danger" style="margin: 0px 10px;">
+							Đăng Nhập
+						</button>
+					</form>
+				</li>
+		    </ul>
+		</div>
+	</nav>
+	
+	<!-- HEADER -->
+	<div class="head">
+		<div class="form-row a-black ccc">
+			<div class="col-10">
+				<input type="text" class="form-control aaa" placeholder="Nhập nội dung tìm kiếm">
+			</div>
+			<div class="col-2">
+				<a href="#"><i class="fab fa-searchengin fa-2x bbb"></i></a>
+			</div>
+		</div>
+	</div>					
+	
+	<!-- BÌNH LUẬN -->
+	<div class="topp padd-topp">
+			<div class="row">
+						<div class="col-sm-12">
+							<h2>Tạo chủ đề bình luận</h2>
+							<div class="jumbotron bg-white" style="padding:15px">
+								
+								<label>Tiêu đề<font color=red>*</font></label>
+								<input type="text" class="form-control mb-4">
+								<div class="form-row">
+									<div class="col-6">
+										<select class="form-control" id="sel1" name="sellist1">
+											<option>Chủ đề</option>
+											<option>Khóa học</option>
+											<option>Lập trình</option>
+											<option>Chém gió</option>
+										</select>
+									</div>
+									<div class="col-6">
+										<select class="form-control" id="sel1" name="sellist1">
+											<option>Hashtags</option>
+											<option>hỏi đáp</option>
+											<option>thảo luận</option>
+											<option>bình chọn</option>
+											<option>hỏi xoáy đáp xoay</option>
+										</select>
+									</div>
+								</div>
+								<br>
+								<label>Nội dung<font color=red>*</font></label>
+								<form action="#!">
+									<div class="form-group">
+											<div id="editor" class="bg-bluedark text-white" style="border-radius: 15px;"><br><br><br><br><br><br></div>
+									</div>
+									<button type="submit" class="btn btn-danger marbtnlg">Bình luận</button>
+								</form>
+							</div>
+						</div>
+						
+						<div class="col-sm-12">
+							<div class="topforum sha bg-white">
+								<form action="z_forum.html">
+									<div class="full">
+										<div class="form-row">
+											<div class="col-2">
+												<img src="./image/cmt0.jpg" id="iii" class="img-thumbnail">
+											</div>
+											<div class="col-7">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><h3>LẬP TRÌNH C#</h3></a>
+												<br>
+												<p><font size=4px>Viết chương trình xét 4 điểm (toạ độ Oxy) có tạo thành hình chữ nhật không ?</font></p>
+												<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhGaoDo.20it2@vku.udn.vn</font></i></a></span>
+												<span style="margin-left:50px;">Cập nhật lần cuối: 1 ngày trước.</span>
+												<br><br>
+												<p>
+													<span class="badge badge-success"><font size=4px>Lập trình</font></span>
+													<span class="badge badge-secondary"><font size=4px>hỏi đáp</font></span>
+												</p>
+											</div>
+											<div class="col-2 cmtt">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><i class="far fa-comment-dots fa-2x"></i></a><span><font size=5px> 1</font></span>
+											</div>
+										</div>
+									</div>
+									<!--RESPONSIVE-->
+									<div class="dienthoai">
+										<div class="form-row">
+											<div class="col-6">
+												<img src="./image/cmt0.jpg" id="iii" class="img-thumbnail">
+											</div>
+											<div class="col-5 cmtt">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><i class="far fa-comment-dots fa-2x"></i></a><span><font size=5px> 1</font></span>
+											</div>
+											<div class="col-12">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><h3>LẬP TRÌNH C#</h3></a>
+												<br>
+												<p><font size=4px>Viết chương trình xét 4 điểm (toạ độ Oxy) có tạo thành hình chữ nhật không?</font></p>
+												<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhGaoDo.20it2@vku.udn.vn</font></i></a></span>
+												<span style="margin-left:50px;">Cập nhật lần cuối: 1 ngày trước.</span>
+												<br><br>
+												<p>
+													<span class="badge badge-success"><font size=4px>Lập trình</font></span>
+													<span class="badge badge-secondary"><font size=4px>hỏi đáp</font></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						
+						<div class="col-sm-12">
+							<div class="topforum sha bg-bluelight">
+								<form action="z_forum.html">
+									<div class="full">
+										<div class="form-row">
+											<div class="col-2">
+												<img src="./image/cmt1.jpg" id="iii" class="img-thumbnail">
+											</div>
+											<div class="col-7">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><h3>HỌC PHÍ CỦA FLASHCODE</h3></a>
+												<br>
+												<p><font size=4px>Học trực tuyến tại FLASHCODE có tốn phí không ạ :></font></p><br>
+												<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhGaoVang.20it2@vku.udn.vn</font></i></a></span>
+												<span style="margin-left:50px;">Cập nhật lần cuối: 2 ngày trước.</span>
+												<br><br>
+												<p>
+													<span class="badge badge-warning"><font size=4px>Khóa học</font></span>
+													<span class="badge badge-secondary"><font size=4px>hỏi đáp</font></span>
+												</p>
+											</div>
+											<div class="col-2 cmtt">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><i class="far fa-comment-dots fa-2x"></i></a><span><font size=5px> 2</font></span>
+											</div>
+										</div>
+									</div>
+									<!--RESPONSIVE-->
+									<div class="dienthoai">
+										<div class="form-row">
+											<div class="col-6">
+												<img src="./image/cmt1.jpg" id="iii" class="img-thumbnail">
+											</div>
+											<div class="col-5 cmtt">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><i class="far fa-comment-dots fa-2x"></i></a><span><font size=5px> 2</font></span>
+											</div>
+											<div class="col-12 lkcmt">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><h3>HỌC PHÍ CỦA FLASHCODE</h3></a>
+												<br>
+												<p><font size=4px>Học trực tuyến tại FLASHCODE có tốn phí không ạ :></font></p><br>
+												<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhGaoVang.20it2@vku.udn.vn</font></i></a></span>
+												<span style="margin-left:50px;">Cập nhật lần cuối: 2 ngày trước.</span>
+												<br><br>
+												<p>
+													<span class="badge badge-warning"><font size=4px>Khóa học</font></span>
+													<span class="badge badge-secondary"><font size=4px>hỏi đáp</font></span>
+												</p>
+											</div>
+										</div>											
+									</div>
+								</form>
+							</div>
+						</div>
+						
+						<div class="col-sm-12">
+							<div class="topforum sha bg-white">
+								<form action="z_forum.html">
+									<div class="full">
+										<div class="form-row">
+											<div class="col-2">
+												<img src="./image/cmt2.jpg" id="iii" class="img-thumbnail">
+											</div>
+											<div class="col-7">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><h3>DATA SCIENCE - AI</h3></a>
+												<br>
+												<p><font size=4px>Các bác cho hỏi ngành DS-AI này ổn áp để theo học không hay ra trường còn cái nịt mà ko có việc ạ :v</font></p>
+												<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhGaoDen.20it2@vku.udn.vn</font></i></a></span>
+												<span style="margin-left:50px;">Cập nhật lần cuối: 3 ngày trước.</span>
+												<br><br>
+												<p>
+													<span class="badge badge-success"><font size=4px>Lập trình</font></span>
+													<span class="badge badge-secondary"><font size=4px>thảo luận</font></span>
+												</p>
+											</div>
+											<div class="col-2 cmtt">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><i class="far fa-comment-dots fa-2x"></i></a><span><font size=5px> 3</font></span>
+											</div>
+										</div>
+									</div>
+									<!--RESPONSIVE-->
+									<div class="dienthoai">
+										<div class="form-row">
+											<div class="col-6">
+												<img src="./image/cmt2.jpg" id="iii" class="img-thumbnail">
+											</div>
+											<div class="col-5 cmtt">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><i class="far fa-comment-dots fa-2x"></i></a><span><font size=5px> 3</font></span>
+											</div>
+											<div class="col-12 lkcmt">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><h3>DATA SCIENCE - AI</h3></a>
+												<br>
+												<p><font size=4px>Các bác cho hỏi ngành DS-AI này ổn áp để theo học không hay ra trường còn cái nịt mà ko có việc ạ :v</font></p>
+												<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhGaoDen.20it2@vku.udn.vn</font></i></a></span>
+												<span style="margin-left:50px;">Cập nhật lần cuối: 3 ngày trước.</span>
+												<br><br>
+												<p>
+													<span class="badge badge-success"><font size=4px>Lập trình</font></span>
+													<span class="badge badge-secondary"><font size=4px>thảo luận</font></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="topforum sha bg-bluelight">
+								<form action="z_forum.html">
+									<div class="full">
+										<div class="form-row">
+											<div class="col-2">
+												<img src="./image/cmt3.jpg" id="iii" class="img-thumbnail">
+											</div>
+											<div class="col-7">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><h3>IT VIỆC NHẸ LƯƠNG CAO</h3></a>
+												<br>
+												<p><font size=4px>Xin tips, tools các loại ngồi rung đùi sau ra trường lương nghìn đô với các bác :v</font></p>
+												<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhGaoHong.20it2@vku.udn.vn</font></i></a></span>
+												<span style="margin-left:50px;">Cập nhật lần cuối: 5 ngày trước.</span>
+												<br><br>
+												<p>
+													<span class="badge badge-danger"><font size=4px>Chém gió</font></span>
+													<span class="badge badge-secondary"><font size=4px>hỏi xoáy đáp xoay</font></span>
+												</p>
+											</div>
+											<div class="col-2 cmtt">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><i class="far fa-comment-dots fa-2x"></i></a><span><font size=5px> 10</font></span>
+											</div>
+										</div>
+									</div>
+									<!--RESPONSIVE-->
+									<div class="dienthoai">
+										<div class="form-row">
+											<div class="col-6">
+												<img src="./image/cmt3.jpg" id="iii" class="img-thumbnail">
+											</div>
+											<div class="col-5 cmtt">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><i class="far fa-comment-dots fa-2x"></i></a><span><font size=5px> 10</font></span>
+											</div>
+											<div class="col-12">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><h3>IT VIỆC NHẸ LƯƠNG CAO</h3></a>
+												<br>
+												<p><font size=4px>Xin tips, tools các loại ngồi rung đùi sau ra trường lương nghìn đô với các bác :v</font></p>
+												<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhGaoHong.20it2@vku.udn.vn</font></i></a></span>
+												<span style="margin-left:50px;">Cập nhật lần cuối: 5 ngày trước.</span>
+												<br><br>
+												<p>
+													<span class="badge badge-danger"><font size=4px>Chém gió</font></span>
+													<span class="badge badge-secondary"><font size=4px>Hỏi xoáy đáp xoay</font></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						
+						<div class="col-sm-12 padd-bott1">
+							<div class="topforum sha bg-white">
+								<form action="z_forum.html">
+									<div class="full">
+										<div class="form-row">
+											<div class="col-2">
+												<img src="./image/cmt4.jpg" id="iii" class="img-thumbnail">
+											</div>
+											<div class="col-7">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><h3>IT CÓ GÁI?</h3></a>
+												<br>
+												<p><font size=4px>Mình mạnh dạng đăng tus này tuyển ny cùng đam mê lập trình ạ =))</font></p><br>
+												<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhTheFlash.20it2@vku.udn.vn</font></i></a></span>
+												<span style="margin-left:50px;">Cập nhật lần cuối: 10 ngày trước.</span>
+												<br><br>
+												<p>
+													<span class="badge badge-danger"><font size=4px>Chém gió</font></span>
+													<span class="badge badge-secondary"><font size=4px>hỏi xoáy đáp xoay</font></span>
+												</p>
+											</div>
+											<div class="col-2 cmtt">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><i class="far fa-comment-dots fa-2x"></i></a><span><font size=5px> 20</font></span>
+											</div>
+										</div>
+									</div>
+									<!--RESPONSIVE-->
+									<div class="dienthoai">
+										<div class="form-row">
+											<div class="col-6">
+												<img src="./image/cmt4.jpg" id="iii" class="img-thumbnail">
+											</div>
+											<div class="col-5 cmtt">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><i class="far fa-comment-dots fa-2x"></i></a><span><font size=5px> 20</font></span>
+											</div>
+											<div class="col-12">
+												<a href="z_forum.html" style="text-decoration: none; color: black;"><h3>IT CÓ GÁI?</h3></a>
+												<br>
+												<p><font size=4px>Mình mạnh dạng đăng tus này tuyển ny cùng đam mê lập trình ạ =))</font></p><br>
+												<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhTheFlash.20it2@vku.udn.vn</font></i></a></span>
+												<span style="margin-left:50px;">Cập nhật lần cuối: 10 ngày trước.</span>
+												<br><br>
+												<p>
+													<span class="badge badge-danger"><font size=4px>Chém gió</font></span>
+													<span class="badge badge-secondary"><font size=4px>Hỏi xoáy đáp xoay</font></span>
+												</p>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+			</div>
+	</div>					
+	<!-- THANH CHUYỂN TRANG -->
+	
+	<div class="topp padd-bott2">
+		<ul class="pagination">
+		  <li class="page-item"><a class="page-link" style="margin-left:-4px;" href="#">Trang trước</a></li>
+		  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+		  <li class="page-item"><a class="page-link" href="#">2</a></li>
+		  <li class="page-item"><a class="page-link" href="#">3</a></li>
+		  <li class="page-item"><a class="page-link" href="#">4</a></li>
+		  <li class="page-item"><a class="page-link" href="#">6</a></li>
+		  <li class="page-item"><a class="page-link" href="#">7</a></li>
+		  <li class="page-item"><a class="page-link" href="#">8</a></li>
+		  <li class="page-item"><a class="page-link" href="#">9</a></li>
+		  <li class="page-item"><a class="page-link" href="#">Trang tiếp theo</a></li>
+		</ul>
+	</div>
+	
+	
+	<!-- FOOTER -->
+	
+	<footer class="bg-light text-center text-bla bor">
+		<div class="container p-4">
+			<section class="mb-4">
+				<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn btn-outline-info btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+				<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+				<a class="btn btn-outline-purple btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+				<a class="btn btn-outline-primary btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+				<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+			</section>
+			<section class="">
+				<form action="#!">
+					<div class="row d-flex justify-content-center">
+						<div class="col-auto">
+							<p class="pt-2">
+								<strong>Đăng ký Email nhận tin mới:</strong>
+							</p>
+						</div>
+						<div class="col-md-5 col-12">
+							<div class="form-outline form-whi mb-4">
+								<input type="email" id="form5Example2" class="form-control" />
+							</div>
+						</div>
+						<div class="col-auto">
+							<button type="submit" class="btn btn-outline-x mb-4">
+								Đăng ký
+							</button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section class="mb-4">
+				<p>
+					FlashCode là nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách <br>nhanh chóng và chính xác.
+				</p>
+			</section>
+			<section style="text-align: left;">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+						<h4 class="text-red">THÔNG TIN</h4>
+						<ul class="list-unstyled mb-0 footinfo">
+							<li>
+								<i class="fas fa-map-marker-alt text-red"> </i>
+								<a href="#!" class="text-bla"> &nbsp;470 Trần Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</a>
+							</li>
+							<li>
+								<i class="fas fa-phone text-red"> </i>
+								<a href="#!" class="text-bla"> 0973309606</a>
+							</li>
+							<li>
+								<i class="far fa-envelope text-red"> </i>
+								<a href="#!" class="text-bla"> npthinh.20it2@vku.udn.vn</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h4 class="text-x">LIÊN KẾT</h4>
+						<ul class="list-unstyled mb-0 foot">
+							<li>
+								<a href="learn.html" class="text-bla">Khóa học</a>
+							</li>
+							<li>
+								<a href="train.html" class="text-bla">Luyện tập</a>
+							</li>
+							<li>
+								<a href="fight.html" class="text-bla">Thi đấu</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot">
+						<h4 class="text-x">HỖ TRỢ</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="document.html" class="text-bla">Tài liệu</a>
+							</li>
+							<li>
+								<a href="share.html" class="text-bla">Chia sẻ</a>
+							</li>
+							<li>
+								<a href="tool.html" class="text-bla">Thủ thuật</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot">
+						<h4 class="text-x">TRỢ GIÚP</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="forum.html" class="text-bla">Diễn đàn</a>
+							</li>
+							<li>
+								<a href="aboutus.html" class="text-bla">Về chúng tôi</a>
+							</li>
+							<li>
+								<a href="contact.html" class="text-bla">Liên hệ với chúng tôi</a>
+							</li>
+						</ul>
+					</div>
+			
+				</div>
+			</section>
+		</div>
+		<div class="text-center p-3 text-whi" style="background-color: rgba(0, 0, 0);">
+			Cung cấp bởi <a class="text-whi" href="#!">THINHVKU</a> © 2021 Copyright. Sắp đăng ký bản quyền rev 04/11/2021 9:11:02 PM
+		</div>
+	</footer>
+	
+	<script>
+		InlineEditor
+			.create( document.querySelector( '#editor' ) )
+			.catch( error => {
+				console.error( error );
+			} );
+	</script>
+	
+</body>

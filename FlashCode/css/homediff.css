@@ -1,0 +1,22 @@
+/* banner số */
+.number_icon { margin-top: 55px; font-size: 25px; display: inline-flex; }
+.number_grand { color: white; }
+
+.icon_adv.icon_color { background: white; color: red; }
+.icon_adv.icon_color:hover { background: white; color: #2c31cf; }
+.icon_adv { border: 1px solid #ccc; padding: 4px; border-radius: 8px; font-size: 17px; color: white; align-self: center; }
+.icon_title { font-size: 25px; margin-right: 4px; }
+.icon_title { min-width: 40px; text-align: center; }
+.icon_adv { border: 1px solid #ccc; padding: 4px; border-radius: 8px; font-size: 17px; color: white; align-self: center; }
+.icon_title { font-size: 25px; margin-right: 4px; }
+
+.main_achieve { text-align: center; }
+.title_achieve { color: white; font-size: 21px; display: block; }
+
+/* banner */
+.banner img { width: 100%; }
+
+/* made with */
+.madewith{ color: red; position: relative; top: -35px; }
+.madewith:hover{ color: #2c31cf; }
+.pmade:hover{ transform:scale(1.5); transition: 1s; }

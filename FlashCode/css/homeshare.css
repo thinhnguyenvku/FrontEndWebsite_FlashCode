@@ -1,0 +1,20 @@
+
+/* Chia sẻ */
+
+.col-sm-4 input { width: 270px; float: left; }
+
+.col-sm-4 button { float: left; }
+
+.col-sm-4 hr { width: 40px; height: 2px; float: left; }
+
+.col-sm-4 ul { list-style-type: none; float: left; }
+
+.col-sm-4 img { width: 148px; height: 100px; }
+
+.col-sm-4 img:hover { image-rendering: pixelated; }
+
+.col-sm-4 li { padding: 10px; width: 100%; border-bottom: 1px solid; display: flex; background-color: white; }
+
+.col-sm-4 p { margin-left: 10px; }
+
+.col-sm-4 li:hover { cursor: pointer; background-color: #DDDDDD; color: #2c31cf; }

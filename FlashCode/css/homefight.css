@@ -1,0 +1,14 @@
+/* Thi đấu */
+.top2 { margin: auto; background-color: white;}
+.top2 img { width: 100%; height: 150px; }
+.top2:hover { box-shadow:10px 10px 10px gray; }
+.top2 img:hover { transition: 0.5s; image-rendering: pixelated; }
+.top2 h3:hover { cursor: pointer; color : #2c31cf; }
+
+.our-team { padding: 0px 0 40px; margin-bottom: 30px; text-align: center; overflow: hidden; position: relative; background-color: #fff; }
+.our-team .title { font-size: 15px; color: black; }
+
+.our-team .social { width: 100%; position: absolute; bottom: -50px; left: 0; transition: all 0.5s ease 0s; }
+
+.our-team:hover .social { bottom: 0; }
+.our-team .name { color: black; }

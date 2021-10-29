@@ -1,0 +1,75 @@
+.topp { width: 85%; margin: auto; }
+.aaa { margin-top:40px; }
+.bbb { margin-top:42px; margin-left:-48px; }
+.ccc { margin-left:-30px; }
+.a-black a { color:#2c31cf; }
+.bbb:hover { color:red;}
+
+.topforum { width: 100%; float: left; margin: 20px 0px; background-color: white; }
+.topforum h3:hover{ cursor: pointer; color : #2c31cf; }
+.topforum h3 { padding: 20px 50px 0px; }
+.topforum p { padding: 0px 50px 10px; color: gray; }
+
+#iii {
+	margin:45px 20px 0px 20px;
+	width:100%;
+	/* bo tròn avt */
+	border-image: solix red 1px;
+	border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+}
+
+.cmtt {text-align:right; margin-top:115px; }
+.topforum .cmtt i:hover { cursor: pointer; color : #2c31cf; }
+
+.padd-topp{ padding-top:30px;}
+.padd-bott1{ padding-bottom:40px;}
+.padd-bott2{ padding-bottom:80px;}
+.sha { box-shadow:8px 8px 8px gray; }
+.sha:hover { box-shadow:5px 5px 5px gray; }
+
+.head { width: 50%; padding-left:125px; }
+.dienthoai { display:none; }
+
+@media screen and (max-width: 640px) {
+
+	[class*="col-"] { 
+		width: 100%; 
+	} 
+	.a-black {
+		padding-top: 10px;
+	}
+	.head {
+		padding:20px;
+		padding-left:60px;
+		width:100%;
+	}
+	h2 {
+		font-size:25px;
+		text-align:center;
+		padding-bottom:5px;
+	}
+	.full {
+		display:none;
+	}
+	.dienthoai {
+		display: block;
+	}
+	.lkcmt {
+		padding-right: 50px;
+	}
+	.pagination {
+		font-size:12px;
+		margin:0;
+	}
+}
+
+@media screen and (max-width: 758px) and (min-width: 641px {
+	
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px {
+	
+}
+

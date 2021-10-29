@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Chia sẻ - Nơi chia sẻ kinh nghiệm lập trình</title>
+	<link rel="icon" type="img/png" href="image/flash.jpg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	<script src="./js/btn-top.js"></script>
+	
+	<link rel="stylesheet" href="./css/share.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+	
+	<span id="back-to-top">
+		<i class="fas fa-chevron-up fa-2x"></i>
+	</span>
+
+	<!-- NAVIGATION -->
+
+	<nav class="navbar navbar-expand-lg bg-light sticky-top">
+		<a class="navbar-brand" href="index.html"><img src="./image/logo.jpg" alt="logo" class="logo"></a>
+		<button class="navbar-toggler menu" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon">MENU</span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="learn.html" id="navbardrop" data-toggle="dropdown">Khóa học</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="learn.html#section1">Kiến thức cơ sở</a>
+							<a class="dropdown-item" href="learn.html#section2">Lập trình cơ sở</a>
+							<a class="dropdown-item" href="learn.html#section3">Lập trình nâng cao</a>
+							<a class="dropdown-item" href="learn.html#section4">Giải quyết vấn đề</a>
+							<a class="dropdown-item" href="learn.html#section5">Kỹ năng nâng cao</a>
+						</div>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="train.html">Luyện tập</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="fight.html">Thi đấu</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="forum.html">Diễn đàn</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="document.html">Tài liệu</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link gachchan" href="share.html">Chia sẻ</a>
+				</li>
+				<li class="nav-item">
+				    <a class="nav-link" href="tool.html">Thủ thuật</a>
+				</li>
+			</ul>
+			<ul  class="navbar-nav ml-auto">				
+				<li class="dropdown sel">
+					<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img src="https://www.countryflags.io/vn/flat/32.png"></a>
+					<div class="dropdown-menu sel1">
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/vn/flat/32.png">Tiếng Việt</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/gb/flat/32.png">English</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/kr/flat/32.png">한국어</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/jp/flat/32.png">日本語</a>
+					</div>
+				</li>
+				<li class="vip">
+					<form action="account.html" class="vip">
+						<button type="submit" class="btn btn-danger" style="margin: 0px 10px;">
+							Đăng Nhập
+						</button>
+					</form>
+				</li>
+		    </ul>
+		</div>
+	</nav>
+	
+	<!-- HEADER -->
+	<div class="topp">
+		<div class="row">
+		
+			<div class="col-sm-12 aaa">
+				<div class="full">
+					<div class="col-sm-8 topsharefind">
+						<div class="form-row a-black">
+							<div class="col-11">
+								<input type="text" class="form-control" placeholder="Nhập nội dung tìm kiếm">
+							</div>
+							<div class="col-1">
+								<a href="#"><i class="fab fa-searchengin fa-2x bbb"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 toptraincreate">
+						<!-- Modal của Bootstrap -->
+						<button type="button" class="btn btn-outline-x" data-toggle="modal" data-target="#myModal">
+							Tạo bài chia sẻ của bạn
+						</button>
+						<div class="modal" id="myModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h4 class="modal-title">Tạo chia sẻ</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+									<div class="modal-body">
+										<input type="text" class="form-control mb-4" placeholder="Nhập tiêu đề">
+										<br>
+										<input type="text" class="form-control mb-4" placeholder="Nhập hashtag tìm kiếm">
+										<br>
+										<p><i>Nhập nội dung bài chia sẻ (bài viết, hình ảnh, source code, link, ...) của bạn tại đây:</i></p>	
+										<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+										<i class="fab fa-google-drive iconcmt"></i>
+										<i class="fas fa-paperclip iconcmt"></i>
+										<i class="far fa-file-image iconcmt"></i>
+										<i class="far fa-file-audio iconcmt"></i>
+										<i class="far fa-file-video iconcmt"></i>
+										<br>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">Gửi bài</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div class="dienthoai">
+					<div class="col-sm-12 topsharefind">
+						<div class="form-row a-black">
+							<div class="col-11">
+								<input type="text" class="form-control" placeholder="Nhập nội dung tìm kiếm">
+							</div>
+							<div class="col-1">
+								<a href="#"><i class="fab fa-searchengin fa-2x bbb"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 toptraincreate">
+						<!-- Modal của Bootstrap -->
+						<button type="button" class="btn btn-outline-x" data-toggle="modal" data-target="#myModal">
+							Tạo bài chia sẻ của bạn
+						</button>
+						<div class="modal" id="myModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h4 class="modal-title">Tạo chia sẻ</h4>
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+									</div>
+									<div class="modal-body">
+										<input type="text" class="form-control mb-4" placeholder="Nhập tiêu đề">
+										<br>
+										<input type="text" class="form-control mb-4" placeholder="Nhập hashtag tìm kiếm">
+										<br>
+										<p><i>Nhập nội dung bài chia sẻ (bài viết, hình ảnh, source code, link, ...) của bạn tại đây:</i></p>	
+										<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+										<i class="fab fa-google-drive iconcmt"></i>
+										<i class="fas fa-paperclip iconcmt"></i>
+										<i class="far fa-file-image iconcmt"></i>
+										<i class="far fa-file-audio iconcmt"></i>
+										<i class="far fa-file-video iconcmt"></i>
+										<br>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-dismiss="modal">Gửi bài</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		
+			<div class="col-sm-12 padd-topp">
+				<h3 class="tieudeshare" id="noibat">Nổi bật</h5>
+			</div>
+		
+			<div class="full">
+				<div class="col-sm-12">
+					<div class="topshare">
+						<div class="form-row">
+							<div class="col-4">
+								<img src="./image/chiase1.jpg" class="ima_share">
+							</div>
+							<div class="col-8">
+								<a href="z_share.html" class="a1"><h4>Trở Thành Một Front End Developer Toàn Diện?</h4></a>
+								<i class="fas fa-star text-yellow iii"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<p>Khi đã thông thạo HTML và CSS thì bước tiếp theo là tiếp cận với JavaScript. Vậy chúng ta nên tiếp cận như thế nào để trở thành 1 front end developer toàn diện?</p>	
+								<p>
+									<span class="badge badge-secondary">Java</span>
+									<span class="badge badge-secondary">Lập trình</span>
+									<span class="badge badge-secondary">Sudoku</span>
+								</p>
+								<hr>
+								<span style="margin-left:50px;">By <a href="#!"><i><font color=#2c31cf>npthinh.20it2@vku.udn.vn</font></i></a></span>
+								<span style="margin-left:18px;">Cập nhật lần cuối: <font color=gray>04/11/2016</font></span>
+								<span style="margin-left:18px;">
+									Chia sẻ ngay:
+									<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+									<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+									<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--RESPONSIVE-->
+			<div class="dienthoai">
+				<div class="col-sm-12">
+					<div class="topshare">
+						<div class="form-row">
+							<div class="col-11">
+								<img src="./image/chiase1.jpg" class="ima_share">
+							</div>
+							<div class="col-12">
+								<a href="z_share.html" class="a1"><h4>Lập Trình Sodoku Bằng Java</h4></a>
+								<i class="fas fa-star text-yellow iii"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<p class="p">Trò chơi sudoku đòi hỏi ta sự nhanh nhạy nhưng vẫn phải đảm bảo tính chính xác và cẩn thận.</p>	
+								<p>
+									<span class="badge badge-secondary">Java</span>
+									<span class="badge badge-secondary">Lập trình</span>
+									<span class="badge badge-secondary">Sudoku</span>
+								</p>
+								<hr>
+								<div class="ok">
+									<span style="margin-left:50px;">By <a href="#!"><i><font color=#2c31cf>npthinh.20it2@vku.udn.vn</font></i></a></span><br>
+									<span style="margin-left:18px;">Cập nhật lần cuối: <font color=gray>04/11/2016</font></span>
+									<span style="margin-left:18px;"><br>
+										Chia sẻ ngay:
+										<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+										<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+										<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+						
+						
+						
+			<div class="col-sm-12 padd-topp">
+				<h3 class="tieudeshare" id="xuhuong">Xu hướng</h5>
+			</div>
+		
+			<div class="col-sm-12">
+				<div class="topshare2 mar-right">
+					<img src="./image/chiase2.jpg" class="alo_share">
+
+					<a href="z_share.html" class="a2"><h4>Thuật Toán Đào Tạo Mạng H...</h4></a>
+					<i class="fas fa-star text-yellow iii"></i>
+					<i class="fas fa-star text-yellow"></i>
+					<i class="fas fa-star text-yellow"></i>
+					<i class="fas fa-star text-yellow"></i>
+					<i class="fas fa-star-half-alt text-yellow"></i>
+					<p>Tại hội nghị MLSys 2021, các nhà khoa học máy tính từ Đại học Rice đã giới thiệu một phần mềm trí tuệ nhân tạo (AI) có thể chạy trên bộ xử l...</p>	
+					<p>
+						<span class="badge badge-secondary">Java</span>
+						<span class="badge badge-secondary">Lập trình</span>
+						<span class="badge badge-secondary">Sudoku</span>
+					</p>
+					<hr>
+					<span style="margin-left:10px;"><span><a href="#!"><i><font color=#2c31cf>npthinh.20it2@vku.udn.vn</font></i></a></span>			
+					<span style="float: right; margin-right:10px;"><font color=gray>03/09/2020</font></span>
+				</div>
+							
+				<div class="topshare2 mar-right">
+					<img src="./image/chiase4.jpg" class="alo_share">
+
+					<a href="z_share.html" class="a2"><h4>Thuật Toán Đưa Ra Chuỗi Nh...</h4></a>
+					<i class="fas fa-star text-yellow iii"></i>
+					<i class="fas fa-star text-yellow"></i>
+					<i class="fas fa-star text-yellow"></i>
+					<i class="fas fa-star text-yellow"></i>
+					<i class="fas fa-star-half-alt text-yellow"></i>
+					<p>Chắc hẳn ai học về giải thuật cũng đã từng nghe qua và làm về bài toán đưa ra chuỗi nhị phân độ dài N rồi, nếu bạn mới bắt đầu học hoặc đã bỏ l...</p>	
+					<p>
+						<span class="badge badge-secondary">C++</span>
+						<span class="badge badge-secondary">Binary</span>
+						<span class="badge badge-secondary">Lập trình</span>
+						<span class="badge badge-secondary">Chuỗi</span>
+					</p>
+					<hr>
+					<span style="margin-left:10px;"><span><a href="#!"><i><font color=#2c31cf>npthinh.20it2@vku.udn.vn</font></i></a></span>			
+					<span style="float: right; margin-right:10px;"><font color=gray>11/09/2020</font></span>
+				</div>
+							
+				<div class="topshare2">
+					<img src="./image/chiase3.jpg" class="alo_share">
+
+					<a href="z_share.html" class="a2"><h4>Cân Bằng Phương Trình Hóa...</h4></a>
+					<i class="fas fa-star text-yellow iii"></i>
+					<i class="fas fa-star text-yellow"></i>
+					<i class="fas fa-star text-yellow"></i>
+					<i class="fas fa-star text-yellow"></i>
+					<i class="fas fa-star-half-alt text-yellow"></i>
+					<p>Hóa học là một nỗi sợ và có thể nói là nỗi ám ảnh của đa số học sinh phải không nào, các phương trình thực sự quá phức tạp ở giai đoạn cân bằn...</p>	
+					<p>
+						<span class="badge badge-secondary">C++</span>
+						<span class="badge badge-secondary">Lập trình</span>
+						<span class="badge badge-secondary">PTHH</span>
+					</p>
+					<hr>
+					<span style="margin-left:10px;"><span><a href="#!"><i><font color=#2c31cf>npthinh.20it2@vku.udn.vn</font></i></a></span>			
+					<span style="float: right; margin-right:10px;"><font color=gray>30/09/2020</font></span>
+				</div>
+			</div>
+			
+			<div class="col-sm-12 padd-topp">
+				<h3 class="tieudeshare" id="baivietmoi">Bài viết mới</h5>
+			</div>
+		
+			<div class="col-sm-12">
+				<div class="topshare">
+					<div class="full">
+						<div class="form-row">
+							<div class="col-3">
+								<img src="./image/chiase5.jpg" class="ima_share">
+							</div>
+							<div class="col-9">
+								<a href="z_share.html" class="a1"><h4>Xây Dựng Trò Chơi Đoán Số Bằng Python</h4></a>
+								<i class="fas fa-star text-yellow iii"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<p>Hãy cùng thực hành xây dựng một trò chơi số học bằng giao diện console. Trò chơi có tên "Đoán số".</p>	
+								<p>
+									<span class="badge badge-secondary">Python</span>
+									<span class="badge badge-secondary">Lập trình</span>
+									<span class="badge badge-secondary">game</span>
+									<span class="badge badge-secondary">tutorial</span>
+								</p>
+								<hr>
+								<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhNuu.20it2@vku.udn.vn</font></i></a></span>
+								<span style="margin-left:55px;">Cập nhật lần cuối: <font color=gray>04/11/2020</font></span>
+								<span style="margin-left:55px;">
+									Chia sẻ ngay:
+									<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+									<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+									<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+					<!--RESPONSIVE-->
+					<div class="dienthoai">
+						<div class="form-row">
+							<div class="col-11">
+								<img src="./image/chiase5.jpg" class="ima_share">
+							</div>
+							<div class="col-12">
+								<a href="z_share.html" class="a1"><h4>Xây Dựng Trò Chơi Đoán Số Bằng Python</h4></a>
+								<i class="fas fa-star text-yellow iii"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<p>Hãy cùng thực hành xây dựng một trò chơi số học bằng giao diện console. Trò chơi có tên "Đoán số".</p>	
+								<p>
+									<span class="badge badge-secondary">Python</span>
+									<span class="badge badge-secondary">Lập trình</span>
+									<span class="badge badge-secondary">game</span>
+									<span class="badge badge-secondary">tutorial</span>
+								</p>
+								<hr>
+								<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhNuu.20it2@vku.udn.vn</font></i></a></span>
+								<span style="margin-left:55px;">Cập nhật lần cuối: <font color=gray>04/11/2020</font></span>
+								<span style="margin-left:55px;">
+									Chia sẻ ngay:
+									<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+									<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+									<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+								</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12">
+				<div class="topshare">
+					<div class="full">
+						<div class="form-row">
+							<div class="col-3">
+								<img src="./image/chiase6.jpg" class="ima_share">
+							</div>
+							<div class="col-9">
+								<a href="z_share.html" class="a1"><h4>Học Gì Để Trở Thành Kỹ Sư Phần Mềm?</h4></a>
+								<i class="fas fa-star text-yellow iii"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<p>...và bí kíp phỏng vấn đâu đậu đó cho LTV.</p>	
+								<p>
+									<span class="badge badge-secondary">Interview</span>
+									<span class="badge badge-secondary">Engineering</span>
+									<span class="badge badge-secondary">Software</span>
+								</p>
+								<hr>
+								<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhNuu.20it2@vku.udn.vn</font></i></a></span>
+								<span style="margin-left:55px;">Cập nhật lần cuối: <font color=gray>04/11/2019</font></span>
+								<span style="margin-left:55px;">
+									Chia sẻ ngay:
+									<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+									<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+									<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+					<!--RESPONSIVE-->
+					<div class="dienthoai">
+						<div class="form-row">
+							<div class="col-11">
+								<img src="./image/chiase6.jpg" class="ima_share">
+							</div>
+							<div class="col-12">
+								<a href="z_share.html" class="a1"><h4>Học Gì Để Trở Thành Kỹ Sư Phần Mềm?</h4></a>
+								<i class="fas fa-star text-yellow iii"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<p>...và bí kíp phỏng vấn đâu đậu đó cho LTV.</p>	
+								<p>
+									<span class="badge badge-secondary">Interview</span>
+									<span class="badge badge-secondary">Engineering</span>
+									<span class="badge badge-secondary">Software</span>
+								</p>
+								<hr>
+								<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhNuu.20it2@vku.udn.vn</font></i></a></span>
+								<span style="margin-left:55px;">Cập nhật lần cuối: <font color=gray>04/11/2019</font></span>
+								<span style="margin-left:55px;">
+									Chia sẻ ngay:
+									<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+									<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+									<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12">
+				<div class="topshare">
+					<div class="full">
+						<div class="form-row">
+							<div class="col-3">
+								<img src="./image/chiase7.jpg" class="ima_share">
+							</div>
+							<div class="col-9">
+								<a href="z_share.html" class="a1"><h4>21 Cuốn Sách Khoa Học Dữ Liệu Nên Đọc</h4></a>
+								<i class="fas fa-star text-yellow iii"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<p>Dữ liệu và Trí tuệ nhân tạo tiếp tục thống trị trong báo cáo Báo cáo về việc làm nổi bật năm 2020 củ...</p>	
+								<p>
+									<span class="badge badge-secondary">MachineLearning</span>
+									<span class="badge badge-secondary">AI</span>
+									<span class="badge badge-secondary">BigData</span>
+								</p>
+								<hr>
+								<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhNuu.20it2@vku.udn.vn</font></i></a></span>
+								<span style="margin-left:55px;">Cập nhật lần cuối: <font color=gray>04/11/2018</font></span>
+								<span style="margin-left:55px;">
+									Chia sẻ ngay:
+									<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+									<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+									<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+					<!--RESPONSIVE-->
+					<div class="dienthoai">
+						<div class="form-row">
+							<div class="col-11">
+								<img src="./image/chiase7.jpg" class="ima_share">
+							</div>
+							<div class="col-12">
+								<a href="z_share.html" class="a1"><h4>21 Cuốn Sách Khoa Học Dữ Liệu Nên Đọc</h4></a>
+								<i class="fas fa-star text-yellow iii"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<p>Dữ liệu và Trí tuệ nhân tạo tiếp tục thống trị trong báo cáo Báo cáo về việc làm nổi bật năm 2020 củ...</p>	
+								<p>
+									<span class="badge badge-secondary">MachineLearning</span>
+									<span class="badge badge-secondary">AI</span>
+									<span class="badge badge-secondary">BigData</span>
+								</p>
+								<hr>
+								<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhNuu.20it2@vku.udn.vn</font></i></a></span>
+								<span style="margin-left:55px;">Cập nhật lần cuối: <font color=gray>04/11/2018</font></span>
+								<span style="margin-left:55px;">
+									Chia sẻ ngay:
+									<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+									<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+									<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12">
+				<div class="topshare">
+					<div class="full">
+						<div class="form-row">
+							<div class="col-3">
+								<img src="./image/chiase8.jpg" class="ima_share">
+							</div>
+							<div class="col-9">
+								<a href="z_share.html" class="a1"><h4>Flash Sort - Thuật Toán Sắp Xếp Thần Thánh</h4></a>
+								<i class="fas fa-star text-yellow iii"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<p>Bài viết sẽ làm rõ về Flash Sort - một thuật toán cho tốc độ rất nhanh trong thực tế, tuy nhiên c...</p>	
+								<p>
+									<span class="badge badge-secondary">C</span>
+									<span class="badge badge-secondary">Algorthmi</span>
+									<span class="badge badge-secondary">Sort</span>
+								</p>
+								<hr>
+								<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhNuu.20it2@vku.udn.vn</font></i></a></span>
+								<span style="margin-left:55px;">Cập nhật lần cuối: <font color=gray>04/11/2017</font></span>
+								<span style="margin-left:55px;">
+									Chia sẻ ngay:
+									<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+									<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+									<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+					<!--RESPONSIVE-->
+					<div class="dienthoai">
+						<div class="form-row">
+							<div class="col-11">
+								<img src="./image/chiase8.jpg" class="ima_share">
+							</div>
+							<div class="col-12">
+								<a href="z_share.html" class="a1"><h4>Flash Sort - Thuật Toán Sắp Xếp Thần Thánh</h4></a>
+								<i class="fas fa-star text-yellow iii"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<p>Bài viết sẽ làm rõ về Flash Sort - một thuật toán cho tốc độ rất nhanh trong thực tế, tuy nhiên c...</p>	
+								<p>
+									<span class="badge badge-secondary">C</span>
+									<span class="badge badge-secondary">Algorthmi</span>
+									<span class="badge badge-secondary">Sort</span>
+								</p>
+								<hr>
+								<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhNuu.20it2@vku.udn.vn</font></i></a></span>
+								<span style="margin-left:55px;">Cập nhật lần cuối: <font color=gray>04/11/2017</font></span>
+								<span style="margin-left:55px;">
+									Chia sẻ ngay:
+									<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+									<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+									<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12 padd-bott1">
+				<div class="topshare">
+					<div class="full">
+						<div class="form-row">
+							<div class="col-3">
+								<img src="./image/chiase9.jpg" class="ima_share">
+							</div>
+							<div class="col-9">
+								<a href="z_share.html" class="a1"><h4>Front-End Hay Back-End?</h4></a>
+								<i class="fas fa-star text-yellow iii"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<p>Có rất nhiều vai trò khác tham gia vào phát triển web. Nhưng hầu hết, thường sẽ có hai loại lập tr...</p>	
+								<p>
+									<span class="badge badge-secondary">Back-End</span>
+									<span class="badge badge-secondary">Lập trình</span>
+									<span class="badge badge-secondary">Front-End</span>
+								</p>
+								<hr>
+								<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhNuu.20it2@vku.udn.vn</font></i></a></span>
+								<span style="margin-left:55px;">Cập nhật lần cuối: <font color=gray>04/11/2016</font></span>
+								<span style="margin-left:55px;">
+									Chia sẻ ngay:
+									<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+									<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+									<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+					<!--RESPONSIVE-->
+					<div class="dienthoai">
+						<div class="form-row">
+							<div class="col-11">
+								<img src="./image/chiase9.jpg" class="ima_share">
+							</div>
+							<div class="col-12">
+								<a href="z_share.html" class="a1"><h4>Front-End Hay Back-End?</h4></a>
+								<i class="fas fa-star text-yellow iii"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<i class="fas fa-star text-yellow"></i>
+								<p>Có rất nhiều vai trò khác tham gia vào phát triển web. Nhưng hầu hết, thường sẽ có hai loại lập tr...</p>	
+								<p>
+									<span class="badge badge-secondary">Back-End</span>
+									<span class="badge badge-secondary">Lập trình</span>
+									<span class="badge badge-secondary">Front-End</span>
+								</p>
+								<hr>
+								<span style="margin-left:50px;">By <span><a href="#!"><i><font color=#2c31cf>ThinhNuu.20it2@vku.udn.vn</font></i></a></span>
+								<span style="margin-left:55px;">Cập nhật lần cuối: <font color=gray>04/11/2016</font></span>
+								<span style="margin-left:55px;">
+									Chia sẻ ngay:
+									<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+									<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+									<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- THANH CHUYỂN TRANG -->
+	
+	<div class="topp padd-bott2">
+		<ul class="pagination">
+		  <li class="page-item"><a class="page-link" style="margin-left:-4px;" href="#">Trang trước</a></li>
+		  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+		  <li class="page-item"><a class="page-link" href="#">2</a></li>
+		  <li class="page-item"><a class="page-link" href="#">3</a></li>
+		  <li class="page-item"><a class="page-link" href="#">4</a></li>
+		  <li class="page-item"><a class="page-link" href="#">6</a></li>
+		  <li class="page-item"><a class="page-link" href="#">7</a></li>
+		  <li class="page-item"><a class="page-link" href="#">8</a></li>
+		  <li class="page-item"><a class="page-link" href="#">9</a></li>
+		  <li class="page-item"><a class="page-link" href="#">Trang tiếp theo</a></li>
+		</ul>
+	</div>
+	
+	
+	<!-- FOOTER -->
+	
+	<footer class="bg-light text-center text-bla bor">
+		<div class="container p-4">
+			<section class="mb-4">
+				<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn btn-outline-info btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+				<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+				<a class="btn btn-outline-purple btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+				<a class="btn btn-outline-primary btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+				<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+			</section>
+			<section class="">
+				<form action="#!">
+					<div class="row d-flex justify-content-center">
+						<div class="col-auto">
+							<p class="pt-2">
+								<strong>Đăng ký Email nhận tin mới:</strong>
+							</p>
+						</div>
+						<div class="col-md-5 col-12">
+							<div class="form-outline form-whi mb-4">
+								<input type="email" id="form5Example2" class="form-control" />
+							</div>
+						</div>
+						<div class="col-auto">
+							<button type="submit" class="btn btn-outline-x mb-4">
+								Đăng ký
+							</button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section class="mb-4">
+				<p>
+					FlashCode là nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách <br>nhanh chóng và chính xác.
+				</p>
+			</section>
+			<section style="text-align: left;">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+						<h4 class="text-red">THÔNG TIN</h4>
+						<ul class="list-unstyled mb-0 footinfo">
+							<li>
+								<i class="fas fa-map-marker-alt text-red"> </i>
+								<a href="#!" class="text-bla"> &nbsp;470 Trần Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</a>
+							</li>
+							<li>
+								<i class="fas fa-phone text-red"> </i>
+								<a href="#!" class="text-bla"> 0973309606</a>
+							</li>
+							<li>
+								<i class="far fa-envelope text-red"> </i>
+								<a href="#!" class="text-bla"> npthinh.20it2@vku.udn.vn</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+						<h4 class="text-x">LIÊN KẾT</h4>
+						<ul class="list-unstyled mb-0 foot">
+							<li>
+								<a href="learn.html" class="text-bla">Khóa học</a>
+							</li>
+							<li>
+								<a href="train.html" class="text-bla">Luyện tập</a>
+							</li>
+							<li>
+								<a href="fight.html" class="text-bla">Thi đấu</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot">
+						<h4 class="text-x">HỖ TRỢ</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="document.html" class="text-bla">Tài liệu</a>
+							</li>
+							<li>
+								<a href="share.html" class="text-bla">Chia sẻ</a>
+							</li>
+							<li>
+								<a href="tool.html" class="text-bla">Thủ thuật</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot">
+						<h4 class="text-x">TRỢ GIÚP</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="forum.html" class="text-bla">Diễn đàn</a>
+							</li>
+							<li>
+								<a href="aboutus.html" class="text-bla">Về chúng tôi</a>
+							</li>
+							<li>
+								<a href="contact.html" class="text-bla">Liên hệ với chúng tôi</a>
+							</li>
+						</ul>
+					</div>
+			
+				</div>
+			</section>
+		</div>
+		<div class="text-center p-3 text-whi" style="background-color: rgba(0, 0, 0);">
+			Cung cấp bởi <a class="text-whi" href="#!">THINHVKU</a> © 2021 Copyright. Sắp đăng ký bản quyền rev 04/11/2021 9:11:02 PM
+		</div>
+	</footer>
+</body>
