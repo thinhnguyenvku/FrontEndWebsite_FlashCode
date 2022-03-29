@@ -1,0 +1,127 @@
+.topp { width: 85%; margin: auto; }
+
+.topshare { width: 100%; float: left; margin: 10px 0px; background-color: white; box-shadow:3px 3px 3px  gray; }
+.topshare2 { width: 32%; float: left; margin: 10px 0px; background-color: white; box-shadow:3px 3px 3px  gray; }
+
+.topshare:hover { box-shadow:5px 5px 5px  gray; }
+.topshare2:hover { box-shadow:5px 5px 5px  gray; }
+
+.topshare h4:hover{ cursor: pointer; color : #2c31cf; }
+.topshare h4 { padding: 20px 50px 0px; }
+.topshare .iii { padding: 0px 0px 0px 50px; }
+.topshare p { padding: 0px 50px 0px; color: gray; }
+.topshare img { margin: 15px; width:100%; }
+.topshare hr { width:95%; float:right; padding: 0px; margin: 2px 0px 7px; }
+
+.topshare2 h4:hover{ cursor: pointer; color : #2c31cf; }
+.topshare2 h4 { padding: 15px 0px 0px 10px; }
+.topshare2 .iii { padding: 0px 0px 0px 10px; }
+.topshare2 p { padding: 0px 0px 0px 10px; color: gray; }
+.topshare2 img {width:100%; height:200px; padding: 10px 10px 10px 10px;}
+.topshare2 hr { width:95%; padding: 0px; margin: 5px; }
+
+
+.topsharefind{ width: 100%; float: left; margin-left: -15px;}
+.toptraincreate {float: right; margin-right: -177px;}
+
+.padd-topp { padding-top:30px; }
+.padd-bott1 { padding-bottom:40px; }
+.padd-bott2 { padding-bottom:80px; }
+
+.a-black a { color:#2c31cf; }
+.bbb:hover { color:red;}
+.bbb { margin-top:2px; margin-left:-48px; }
+.aaa { margin-top:40px; }
+
+.iconcmt:hover { color:#2c31cf; }
+
+.tieudeshare { margin-top: 20px; color : #2c31cf;}
+.tieudeshare:hover { text-decoration: underline; }
+
+.mar-right  { margin-right: 22px; }
+
+.page-link { color:#2c31cf; }
+
+.topp .topshare .a1 { text-decoration: none; color: black; }
+.topp .topshare2 .a2 { text-decoration: none; color: black; }
+
+
+.dienthoai {
+	display:none;
+}
+.ok {
+	padding-left:50px;
+}
+
+
+@media screen and (max-width: 425px) {
+	.full {
+		display:none;
+	}
+	.dienthoai {
+		display: block;
+	}
+	.toptraincreate {
+		padding-top:10px;
+		margin: auto;
+		width:100%;
+		text-align:center;
+	}
+	.topsharefind {
+		margin:0px;
+		padding-top:10px;
+		margin-left:5%;
+	}
+	.tieudeshare {
+		text-align:center;
+	}
+	.p {
+		text-align:justify;
+	}
+	.ok {
+		text-align:center;
+	}
+	.topshare2 { 
+		width: 100%;
+		margin: 10px 0 ;
+	}
+	h4 {
+		font-size:22px;
+	}
+	.topshare2 {
+		width:100%;
+	}
+	.pagination {
+		font-size:12px;
+		margin:0;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+	.full {
+		display:none;
+	}
+	.dienthoai {
+		display: block;
+	}
+	.ok {
+		text-align:center;
+		margin-left:-50px;
+	}
+	.topshare2 {
+		width:31%;
+	}
+	.toptraincreate {
+		padding-top:10px;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+	.topshare2 {
+		width:31.6%;
+	}
+	.topshare2 p {
+		text-align:justify;
+		padding-right:10px;
+	}
+}

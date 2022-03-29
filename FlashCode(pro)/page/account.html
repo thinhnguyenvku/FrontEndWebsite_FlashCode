@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tài khoản</title>
+	<meta charset="utf-8">
+	<meta name="news_keywords" content="flashcode, khóa học, lập trình, trực tuyến, học lập trình miễn phí, thủ thuật lập trình" />
+	<meta name="description" content="FlashCode - nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách nhanh chóng và chính xác." />
+	<link rel="icon" type="img/png" href="../image/flash.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/animate.css">
+	
+	
+	<link rel="stylesheet" href="../css/account.css">
+</head>
+<body>
+
+	<!-- VỀ TRANG CHỦ -->
+
+	<div class="backhome">
+		<a href="../index.html">&#8592; Về trang chủ</a>
+	</div>
+	
+	<!-- FORM -->
+		
+    <div class="container" id="container">
+	
+		<!-- PHẢI 2 -->
+        <div class="form-container sign-up-container">
+            <form action="../index.html" class="dangky">
+                <h2>Đăng ký</h2>
+                <div class="social-container">
+					<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+					<a class="btn btn-outline-info btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+					<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+					<a class="btn btn-outline-purple btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+					<a class="btn btn-outline-primary btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>hoặc dùng email của bạn để tạo tài khoản</span>
+                <input class="form-control" type="text" placeholder="Họ Tên" id="uname" name="uname" required />
+                <input type="email" placeholder="Email" class="form-control" id="uname" name="uname" required />
+                <input type="password" placeholder="Mật Khẩu" class="form-control" id="pwd" name="pswd" required />
+                <button class="btn-outline-danger wow heartBeat">ĐĂNG KÝ</button>
+            </form>
+        </div>
+		
+		<!-- TRÁI 1 -->
+        <div class="form-container sign-in-container">
+            <form action="../index.html" class="dangnhap">
+                <h2>Đăng nhập</h2>
+                <div class="social-container">
+                    <a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+					<a class="btn btn-outline-info btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+					<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+					<a class="btn btn-outline-purple btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+					<a class="btn btn-outline-primary btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>hoặc dùng tài khoản của bạn</span>
+                <input type="email" placeholder="Email" class="form-control" id="uname" name="uname" required />
+                <input type="password" placeholder="Mật Khẩu" class="form-control" id="pwd" name="pswd" required />
+                <a href="#">Quên mật khẩu?</a>
+                <button class="btn-outline-danger wow heartBeat">Đăng nhập</button>
+            </form>
+        </div>
+		
+        <div class="overlay-container">
+            <div class="overlay">
+			
+				<!-- TRÁI 2 -->
+                <div class="overlay-panel overlay-left">
+                    <h2>Bạn đã có tài khoản?</h2>
+                    <p>hãy đăng nhập bằng tài khoản của bạn</p>
+                    <button class="btn-outline-x wow heartBeat" id="signIn">ĐĂNG NHẬP</button>
+                </div>
+				
+				<!-- PHẢI 1 -->
+                <div class="overlay-panel overlay-right">
+                    <h2>Bạn chưa có tài khoản?</h2>
+                    <p>tạo tài khoản mới để kết nối với chúng tôi</p>
+                    <button class="btn-outline-x wow heartBeat" id="signUp">ĐĂNG KÝ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	<script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add('right-panel-active');
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove('right-panel-active');
+        });
+		
+    </script>
+	<script type="text/javascript" src="../js/load.js"></script>
+	<script type="text/javascript" src="../js/wow.min.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+	
+</body>
+</html>

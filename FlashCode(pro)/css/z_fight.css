@@ -1,0 +1,57 @@
+.topp { width: 85%; margin: auto; }
+
+
+.aaa { margin: 22px 15px 8px; float: left; }
+
+.bbb { margin: 15px; float: right; }
+
+.mar-bott1 { margin-bottom: 50px; margin-top: 30px;}
+
+.tieude {float:left; color: #2c31cf; padding: 15px 0px 15px 15px; }
+
+.padd-bott { padding-bottom: 80px; }
+
+.page-link { color:#2c31cf; }
+
+/* Đồng hồ */
+#vnclock{ float: right; font-weight:bold; font-size:20px; color:#red; padding: 19px 15px 11px 0px; }
+
+
+
+.toppp {
+	width: 85%; 
+	margin:auto;
+}
+
+
+@media screen and (max-width: 425px) {
+	.pagination {
+		font-size:12px;
+		margin:0;
+	}
+	.head {
+		padding-left:2%;
+	}
+	.toppp {
+		width:98%;
+		padding-top:10px;
+		margin:0;
+	}
+	.aaa{
+		padding-left:25%;
+	}
+	.bbb {
+		float: none;
+	}
+	.thidau {
+		margin:0px 0px 0px 33%;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+	
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+	
+}

@@ -1,0 +1,58 @@
+.ima {
+	  transition: all 0.5s ease 0s;
+	  border-radius: 5%;
+}
+.ima:hover {
+		  transform:scale(1.04);		  
+}
+
+.alo{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+	width: 100%;
+}
+
+.alo:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+	.text-whi {
+		text-align:center;
+	}
+	.head {
+		margin:-20px 50px 20px 30px;
+		width:100%;
+	}
+	.headlearn {
+		padding-top:10px;
+		padding-bottom:0px;
+	}
+	.a-black {
+		width:100%;
+	}
+	
+	.toplearn {
+		width:100%;
+		margin: 15px 0px;
+	}
+	#tieudelearn {
+		text-align:center;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+	.toplearn {
+		width:45%;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+	.toplearn {
+		width:29%;
+	}
+}

@@ -1,0 +1,77 @@
+.ima {
+	  transition: all 0.5s ease 0s;
+	  
+}
+.ima:hover {
+		  transform:scale(1.1);		  
+}
+
+
+.text {
+	text-align: justify;
+	font-size: 18px;
+}
+
+
+
+
+
+@media screen and (max-width: 425px) {
+	.ima {
+		width:80%;
+	}
+	h1 {
+		font-size:30px;
+	}
+	.topp {
+		width:96%;
+		text-align:center;
+	}
+	.a1 h1 { 
+		margin: 0px 0px 20px 0px;
+	}
+	.a1 p { 
+		margin: 10px 10px 30px 0;
+	}
+	.a2 h1 { 
+		margin: 20px 0px 20px 0px;
+		float:none;
+	}
+	.a2 p { 
+		margin: 10px 10px 30px 0;
+	}
+	.a3 h1 { 
+		margin: 0px 0px 20px 0;
+	}
+	.a3 p { 
+		margin: 10px 10px 30px 0;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+	.ima {
+		width:60%;
+	}
+	.topp {
+		text-align:center;
+	}
+	.a1 h1 { 
+		margin: 0px 0px 20px 0px;
+	}
+	.a1 p { 
+		margin: 10px 10px 30px 0;
+	}
+	.a2 h1 { 
+		margin: 20px 0px 20px 0px;
+		float:none;
+	}
+	.a2 p { 
+		margin: 10px 10px 30px 0;
+	}
+	.a3 h1 { 
+		margin: 0px 0px 20px 0;
+	}
+	.a3 p { 
+		margin: 10px 10px 30px 0;
+	}
+}

@@ -1,0 +1,48 @@
+
+.backtrain i { cursor: pointer; float: left; margin: 7px 5px 0px 20px; }
+
+.backtrain h5:hover, .backtrain i:hover { color:  #2c31cf;}
+
+.backtrain h5 { margin-top: 20px}
+
+.backtrain a { text-decoration: none; color: black; }
+
+
+.topp { width: 85%; margin: auto; }
+
+.toptrain { width: 100%; background-color: white; box-shadow:3px 3px 3px  gray; }
+
+.toptrain:hover { box-shadow:5px 5px 5px  gray; }
+
+.toptrain p { padding-left: 15px; }
+
+.padd-bott { padding-bottom:100px; }
+
+.mar-topp { margin-top: 15px; }
+
+.aaa { margin: 15px; }
+
+
+
+@media screen and (max-width: 1000px) {
+
+	[class*="col-sm-"] { 
+		width: 100%; 
+	} 
+
+	.topfull {
+		padding-top: 10px;
+	}
+	.mar-bott {
+		margin-top:0px;
+	}
+	.topkhac {
+		padding-top:20px;
+		margin-left:-5%;
+		text-align:center;
+	}
+	.aaa {
+		width: 80%;
+	}
+
+}

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FlashCode</title>
+	<meta charset="utf-8">
+	<meta name="news_keywords" content="flashcode, khóa học, lập trình, trực tuyến, học lập trình miễn phí, thủ thuật lập trình" />
+	<meta name="description" content="FlashCode - nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách nhanh chóng và chính xác." />
+	<link rel="icon" type="img/png" href="image/flash.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	<script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/inline/ckeditor.js"></script>
+	<link rel="stylesheet" href="css/animate.css">
+	
+	
+	<link rel="stylesheet" href="./css/style.css">
+	
+	<link rel="stylesheet" href="./css/homelearn.css">
+	<link rel="stylesheet" href="./css/homeshare.css">
+	<link rel="stylesheet" href="./css/homefight.css">
+	<link rel="stylesheet" href="./css/homedocument.css">
+	<link rel="stylesheet" href="./css/hometrain.css">
+	<link rel="stylesheet" href="./css/homeforum.css">
+	<link rel="stylesheet" href="./css/hometeam.css">
+	<link rel="stylesheet" href="./css/homediff.css">
+	
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="preloading">
+	<div class="load">
+      <div class="spinner-border text-success"></div>
+	</div>
+	
+	<!-- NAVIGATION -->
+
+		<nav class="navbar navbar-expand-xl bg-light sticky-top wow fadeInDownBig" data-wow-delay="0.5s" >
+			<div class="logg wow fadeInLeft" data-wow-delay="0.6s"><a class="navbar-brand" href="index.html"><img src="image/logo.jpg" alt="logo" class="logo"></a></div>
+			<div class="menuu wow fadeInRight" data-wow-delay="0.7s">
+				<button class="navbar-toggler menu" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon">MENU </span>
+				</button>
+			</div>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav mr-auto ">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle wow fadeInUp" data-wow-delay="0.7s" href="page/learn.html" id="navbardrop" data-toggle="dropdown">Khóa học</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="page/learn.html#section1">Kiến thức cơ sở</a>
+							<a class="dropdown-item" href="page/learn.html#section2">Lập trình cơ sở</a>
+							<a class="dropdown-item" href="page/learn.html#section3">Lập trình nâng cao</a>
+							<a class="dropdown-item" href="page/learn.html#section4">Giải quyết vấn đề</a>
+							<a class="dropdown-item" href="page/learn.html#section5">Kỹ năng nâng cao</a>
+						</div>
+				</li>
+				<li class="nav-item wow fadeInUp" data-wow-delay="0.8s">
+				    <a class="nav-link" href="page/train.html">Luyện tập</a>
+				</li>
+				<li class="nav-item wow fadeInUp" data-wow-delay="0.9s">
+				    <a class="nav-link" href="page/fight.html">Thi đấu</a>
+				</li>
+				<li class="nav-item wow fadeInUp" data-wow-delay="1s">
+				    <a class="nav-link" href="page/forum.html">Diễn đàn</a>
+				</li>
+				<li class="nav-item wow fadeInUp" data-wow-delay="1.1s">
+				    <a class="nav-link" href="page/document.html">Tài liệu</a>
+				</li>
+				<li class="nav-item wow fadeInUp" data-wow-delay="1.2s">
+				    <a class="nav-link" href="page/share.html">Chia sẻ</a>
+				</li>
+				<li class="nav-item wow fadeInUp" data-wow-delay="1.2s">
+				    <a class="nav-link" href="page/tool.html">Thủ thuật</a>
+				</li>
+			</ul>
+			<ul  class="navbar-nav ml-auto">				
+				<li class="dropdown sel wow fadeInRight" data-wow-delay="0.7s">
+					<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img src="https://www.countryflags.io/vn/flat/32.png"></a>
+					<div class="dropdown-menu sel1">
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/vn/flat/32.png">Tiếng Việt</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/gb/flat/32.png">English</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/kr/flat/32.png">한국어</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/jp/flat/32.png">日本語</a>
+					</div>
+				</li>
+				<li class="vip wow fadeInRight" data-wow-delay="0.8s">
+						<form action="page/account.html" class="vip">
+							<button type="submit" class="btn btn-danger">
+								Đăng Nhập
+							</button>
+						</form>
+				</li>
+		    </ul>
+		</div>
+	</nav>	
+	
+	<!-- KHÓA HỌC 8 + CHIA SẺ 4 -->
+	
+	<div class="top topp">
+			<div class="row">
+			
+				<!-- KHÓA HỌC -->
+			
+				<div class="col-sm-8 khoahoc">
+						<div>
+							<h3 id="tieude1" class="wow fadeInLeft" data-wow-delay="0.5s"><a href="page/learn.html">Khóa học</a></h5>
+						</div>
+						<div class="top1 ima wow fadeInDown" data-wow-delay="0.5s" id="top11" title="C++ cho người mới bắt đầu">
+								<img src="./image/C++chonguoimoibatdau.jpg"><br>
+								<br><h5>C++ cho người m...</h5>
+								<p>Khóa học lập trình C++ cơ bản cho người mới bắt đầu...</p>
+						
+						</div>
+						<div class="top1 ima wow fadeInDown" data-wow-delay="0.6s" id="top11" title="Lập trình hướng đối tượng trong Java">
+								<img src="./image/laptrinhhuongdoituongtrongjava.jpg"><br>
+								<br><h5>Lập trình hướng đ...</h5>
+								<p>Lập trình hướng đối tượng là phương pháp lập trình dựa ...</p>
+							
+						</div>
+						<div class="top1 ima wow fadeInDown" data-wow-delay="0.7s" id="top11" title="Python cơ bản">
+								<img src="./image/pythoncoban.jpg"><br>
+								<br><h5>Python cơ bản</h5>
+								<p>Khóa học lập trình Python cơ bản với các bài tập và lý...</p>
+						</div>
+						<div class="top1 ima wow fadeInDown" data-wow-delay="0.8s" title="Java cơ bản">
+								<img src="./image/javacoban.jpg"><br>
+								<br><h5>Học Java cơ bản</h5>
+								<p>Khóa học lập trình Java cơ bản cho người mới bắt đầu,...</p>
+						</div>
+						<div class="top1 ima wow fadeInDown" data-wow-delay="0.9s" title="Phần cứng máy tính">
+								<img src="./image/phancungmaytinh.png"><br>
+								<br><h5>Phần cứng máy tính</h5>
+								<p>Phần mềm luôn là công cụ cần thiết trong mọi lĩnh vực,...</p>
+						</div>
+						<div class="top1 ima wow fadeInDown" data-wow-delay="1s" title="JavaScript cơ bản">
+								<img src="./image/javascriptcoban.jpg"><br>
+								<br><h5>JavaScript cơ bản</h5>
+								<p>Giúp học viên nắm vững các nguyên tắc và cú pháp cơ...</p>
+						</div>	
+				</div>
+				
+				<!-- CHIA SẺ -->
+				
+				<div class="col-sm-4 chiase">
+						<h3 id="tieude2" class="wow fadeInLeft" data-wow-delay="0.5s"><a href="page/share.html">Chia sẻ</a></h5>
+						<ul class="sharr">
+							<li class="wow fadeInUp" data-wow-delay="0.5s" title="Lập trình Sudoku bằng Java"><img class="alo" src="./image/chiase1.jpg"><p>Lập trình Sudoku bằng Java</p></li>
+							<li class="wow fadeInUp" data-wow-delay="0.7s" title="Thuật toán đào tạo mạng học sâu nhanh gấp 15 lần GPU"><img class="alo" src="./image/chiase2.jpg"><p>Thuật toán đào tạo mạng học sâu nhanh gấp 15 lần GPU</p></li>
+							<li class="wow fadeInUp" data-wow-delay="0.9s" title="Cân bằng PTHH bằng C++"><img class="alo" src="./image/chiase3.jpg"><p>Cân bằng PTHH bằng C++</p></li>
+							<li class="wow fadeInUp" data-wow-delay="1.1s" title="Thuật toán đưa ra chuỗi nhị phân độ dài n"><img class="alo" src="./image/chiase4.jpg"><p>Thuật toán đưa ra chuỗi nhị phân độ dài n</p></li>
+							<li class="wow fadeInUp" data-wow-delay="1.3s" title="Xây dựng trò chơi đoán số bằng Python"><img class="alo" src="./image/chiase5.jpg"><p>Xây dựng trò chơi đoán số bằng Python</p></li>
+					   </ul>
+				</div>
+			</div>
+	</div>
+	
+	<!-- THI ĐẤU -->
+	
+
+	<div class="top">	
+		<div class="thidau">
+			<h3 class="tieude wow fadeInLeft" data-wow-delay="0.5s"><a href="page/fight.html">Thi đấu</a></h5>
+		</div>
+		<div class="row">
+			<div class="our-team top2 wow fadeInLeft"  data-wow-delay="0.5s" title="Cuộc thi SASUKE CODEWAR 2021 do ĐH Bách Khoa TPHCM tổ chức">
+				<a href="page/fight.html#saruke" style="text-decoration:none">
+					<div class="picture">
+						<img class="img-fluid ima" src="image/thi1.png">
+					</div>
+					<div class="team-content">
+						<br>
+						<h3 class="name">SASUKE CODEWAR 2021</h3>
+						<h4 class="title">Cuộc thi lập trình do BKA tổ chức hằng năm dành cho những người yêu thích lập trình tại Việt Nam</h4>
+					</div>
+					<div class="social">
+						<font color=gray>Đã đăng ký <b><font color=red size=5px>789</font></b> thí sinh</font>
+					</div>
+				</a>
+			</div>
+			<div class="our-team top2 wow fadeInRight"  data-wow-delay="0.8s" title="Cuộc thi ĐẤU SĨ CODER 2021 do tập đoàn FPT tổ chức">
+				<a href="page/fight.html#dausicoder" style="text-decoration:none">
+					<div class="picture">
+						<img class="img-fluid ima" src="image/thi2.jpg">
+					</div>
+					<div class="team-content">
+						<br>
+						<h3 class="name">ĐẤU SĨ CODER 2021</h3>
+						<h4 class="title">Cuộc thi lập trình do FPT tổ chức hằng năm dành cho những người yêu thích lập trình trên thế giới</h4>
+					</div>
+					<div class="social">
+						<font color=gray>Đã đăng ký <b><font color=red size=5px>1234</font></b> thí sinh</font>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- TÀI LIỆU -->
+	
+	<div class="top">	
+		<div class="tailieu">
+			<h3 class="tieude wow fadeInLeft" data-wow-delay="0.5s"><a href="page/document.html">Tài liệu</a></h5>
+		</div>
+	</div>
+	<div class="top-60 marbott">
+		<div class="col-sm-12 xoayy">
+			<div class="row">
+				<a href="page/document.html#ds" title="Tài liệu Khoa học dữ liệu">
+					<div class="col-sm-6 wow fadeInLeft"  data-wow-delay="1s">
+						<div class="ani-xoay ">
+							<div class="menu "  style="background-image: url(image/ds1.png);"><p class="text-xoay">Tài liệu Khoa học dữ liệu</div></p>
+						</div>
+					</div>
+				</a>
+				<a href="page/document.html#it" title="Tài liệu Kỹ thuật phần mềm">
+					<div class="col-sm-6 xoay1  wow fadeInRight"  data-wow-delay="0.5s">
+						<div class="ani-xoay">
+							<div class="menu " style="background-image: url(image/it1.png);"><p class="text-xoay">Tài liệu Kỹ thuật phần mềm</p></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="row">
+				<a href="page/document.html#is" title="Tài liệu An toàn thông tin">
+					<div class="col-sm-6 xoay wow fadeInLeft"  data-wow-delay="1s">
+						<div class="ani-xoay ">
+							<div class="menu" style="background-image: url(image/is1.png);"><p class="text-xoay">Tài liệu An toàn thông tin</div></p>
+						</div>
+					</div>
+				</a>
+				<a href="page/document.html#pts" title="Tài liệu Thiết kế đồ họa">
+					<div class="col-sm-6 xoay xoay1  wow fadeInRight"  data-wow-delay="0.5s">
+						<div class="ani-xoay ">
+							<div class="menu " style="background-image: url(image/pts1.png);"><p class="text-xoay">Tài liệu Thiết kế đồ họa</div></p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- LUYỆN TẬP + DIỄN ĐÀN -->
+	
+	<div class="top marbott">
+			<div class="row">
+			
+				<!-- LUYỆN TẬP -->
+			
+				<div class="col-sm-8">
+						<div class="luyentap">
+						<h3 id="tieude1"  class="wow fadeInLeft" data-wow-delay="0.5s"><a href="page/train.html">Luyện tập</a></h5>
+						</div>
+						<div class="top1 giua wow fadeInLeft" data-wow-delay="0.5s" title="Bài tập maxArray">
+							<a href="page/train.html" style="text-decoration:none">
+								<br><h5>maxArray</h5>
+								<br><p><span class="badge badge-success">Đơn giản</span></p>
+								<br><p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap1.svg">
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+							</a>
+						</div>
+						<div class="top1 giua wow fadeInDown" data-wow-delay="0.6s" title="Bài tập createNumber">
+							<a href="page/train.html" style="text-decoration:none">
+								<br><h5>createNumber</h5>
+								<br><p><span class="badge badge-warning">Trung bình</span></p>
+								<br><p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap2.svg">
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+							</a>
+						</div>
+						<div class="top1 giua wow fadeInUp" data-wow-delay="0.7s" title="Bài tập minSwaps">
+							<a href="page/train.html" style="text-decoration:none">
+								<br><h5>minSwaps</h5>
+								<br><p><span class="badge badge-danger">Siêu khó</span></p>
+								<br><p><span class="badge badge-secondary">array</span>
+										<span class="badge badge-secondary">algorithm</span>
+										<span class="badge badge-secondary">sequence</span></p>
+								<img src="./image/luyentap3.svg">
+								<span class="tacgia"><a><i>@NguyenPhuocThinh</i></a></span>
+							</a>
+						</div>
+				</div>
+				
+				<!-- DIỄN ĐÀN -->
+				
+				<div class="col-sm-4 thaoluan wow fadeInRight" data-wow-delay="0.8s">
+					<h3 id="tieude3"  class="wow fadeInLeft" data-wow-delay="0.5s"><a href="page/forum.html">Thảo luận</a></h5><br>
+					<div class="diendan">
+					<div class="jumbotron pcmtt bg-white">
+						<form action="#!">
+							<div class="form-group">
+								<div id="editor" class="bg-bluedark text-white" style="border-radius:5px;"><br><br><br><br></div>
+							</div>
+							<button type="submit" class="btn btn-danger marbtncmt">Bình luận</button>
+						</form>
+						<br>
+						<br>
+					</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<!-- BANNER SỐ -->
+	
+	<div class="container-fluid" style="background: url(./image/bannerfull.jpg); background-size: cover;background-position: center;">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="main_achieve wow fadeInLeft" data-wow-delay="0.5s">
+                                    <div class="number_icon">
+                                        <i class="fas fa-user-graduate icon_title icon_adv icon_color"></i><span class="number_grand">9999+</span>
+                                    </div>
+                                    <span class="title_achieve">Học viên đã đăng ký</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="main_achieve wow fadeInDown"  data-wow-delay="0.6s">
+                                    <div class="number_icon">
+                                        <i class="far fa-address-card icon_title icon_adv icon_color"></i><span class="number_grand">666+</span>
+                                    </div>
+                                    <span class="title_achieve">Chuyên gia tham gia giảng dạy</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="main_achieve wow fadeInRight" data-wow-delay="0.7s">
+                                    <div class="number_icon">
+                                        <i class="fas fa-comments-dollar icon_title icon_adv icon_color"></i><span class="number_grand">33+</span>
+                                    </div>
+                                    <span class="title_achieve">Đơn vị tài trợ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="display: flex;justify-content: center;">
+                        <a class="btn btn-danger wow fadeInUp" data-wow-delay="0.8s" href="#!" >Tham gia khóa học</a>
+                    </div><br>
+    </div>
+	
+	<!-- BANNER 2 -->
+	
+	<div class="top wow fadeIn" data-wow-delay="0.5s">
+		<div class="banner">
+			<img src="./image/banner.jpg">
+		</div>
+	</div>
+	
+	<!-- MADE WITH -->
+	
+	<div class="topmadewith ">
+        <div>
+			<h1 class="madewith wow fadeInDown" data-wow-delay="0.5s">Made with<i class="fas fa-heartbeat"></i></h1>
+             <p class="pmade wow fadeInUp" data-wow-delay="0.7s">Tại FlashCode, nhiệm vụ của chúng tôi là giúp bạn cải thiện bản thân và đạt được công việc mơ ước. Đừng chần chừ! Hãy bắt đầu tham gia khóa học ngay ngày hôm nay.</p>
+        </div>
+    </div>
+	
+	<!-- ĐỘI NGŨ -->
+	<div class="top text-center padbott">
+		<div class="col-lg-12">
+			<br><br>
+			<h4 class="wow fadeInLeft" data-wow-delay="0.5s">ĐƠN VỊ TÀI TRỢ</h4>
+			<div class="form-row">
+				<div class="col-sm-2">
+					<div class="doingu wow fadeInDown" data-wow-delay="0.5s">
+						<img src="./image/bka.png" class="img-thumbnail img-doingu">
+						<div class="overlay">
+							<div class="text-doingu">
+								<h4 class="text-yellow">BKA</h4>
+								<p class="text-white">Trường ĐH Bách Khoa TP. HCM</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="doingu wow fadeInUp" data-wow-delay="0.6s">
+						<img src="./image/vku.png" class="img-thumbnail img-doingu">
+						<div class="overlay">
+							<div class="text-doingu">
+								<h4 class="text-yellow">VKU</h4>
+								<p class="text-white">Trường ĐH CNTT&TT Việt - Hàn</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="doingu wow fadeInDown" data-wow-delay="0.7s">
+						<img src="./image/bka.png" class="img-thumbnail img-doingu">
+						<div class="overlay">
+							<div class="text-doingu">
+								<h4 class="text-yellow">BKA</h4>
+								<p class="text-white">Trường ĐH Bách Khoa TP. HCM</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="doingu wow fadeInUp" data-wow-delay="0.8s">
+						<img src="./image/vku.png" class="img-thumbnail img-doingu">
+						<div class="overlay">
+							<div class="text-doingu">
+								<h4 class="text-yellow">VKU</h4>
+								<p class="text-white">Trường ĐH CNTT&TT Việt - Hàn</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="doingu wow fadeInDown" data-wow-delay="0.9s">
+						<img src="./image/bka.png" class="img-thumbnail img-doingu">
+						<div class="overlay">
+							<div class="text-doingu">
+								<h4 class="text-yellow">BKA</h4>
+								<p class="text-white">Trường ĐH Bách Khoa TP. HCM</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div class="doingu wow fadeInUp" data-wow-delay="1s">
+						<img src="./image/vku.png" class="img-thumbnail img-doingu">
+						<div class="overlay">
+							<div class="text-doingu">
+								<h4 class="text-yellow">VKU</h4>
+								<p class="text-white">Trường ĐH CNTT&TT Việt - Hàn</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+	
+	<!-- FOOTER -->
+	
+	<footer class="bg-light text-center text-bla bor wow fadeInUp" data-wow-delay="0.5s">
+		<div class="container p-4">
+			<section class="mb-4 wow fadeInDown" data-wow-delay="0.6s">
+				<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn btn-outline-info btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+				<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+				<a class="btn btn-outline-purple btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+				<a class="btn btn-outline-primary btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+				<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+			</section>
+			<section class="wow fadeInDown" data-wow-delay="0.7s">
+				<form action="#!">
+					<div class="row d-flex justify-content-center">
+						<div class="col-auto">
+							<p class="pt-2">
+								<strong>Đăng ký Email nhận tin mới:</strong>
+							</p>
+						</div>
+						<div class="col-md-5 col-12">
+							<div class="form-outline form-whi mb-4">
+								<input type="email" id="form5Example2" class="form-control" />
+							</div>
+						</div>
+						<div class="col-auto">
+							<button type="submit" class="btn btn-outline-x mb-4">
+								Đăng ký
+							</button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section class="mb-4 wow jackInTheBox" data-wow-delay="0.7s">
+				<p>
+					FlashCode là nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách <br class="brr">nhanh chóng và chính xác.
+				</p>
+			</section>
+			<section style="text-align: left;">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 mb-4 mb-md-0 wow fadeInLeft" data-wow-delay="0.6s">
+						<h4 class="text-red">THÔNG TIN</h4>
+						<ul class="list-unstyled mb-0 footinfo">
+							<li>
+								<i class="fas fa-map-marker-alt text-red"> </i>
+								<a href="#!" class="text-bla"> &nbsp;470 Trần Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</a>
+							</li>
+							<li>
+								<i class="fas fa-phone text-red"> </i>
+								<a href="#!" class="text-bla"> 0973309606</a>
+							</li>
+							<li>
+								<i class="far fa-envelope text-red"> </i>
+								<a href="#!" class="text-bla"> npthinh.20it2@vku.udn.vn</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 wow fadeInRight" data-wow-delay="0.6s">
+						<h4 class="text-x">LIÊN KẾT</h4>
+						<ul class="list-unstyled mb-0 foot">
+							<li>
+								<a href="page/learn.html" class="text-bla">Khóa học</a>
+							</li>
+							<li>
+								<a href="page/train.html" class="text-bla">Luyện tập</a>
+							</li>
+							<li>
+								<a href="page/fight.html" class="text-bla">Thi đấu</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot wow fadeInRight" data-wow-delay="0.7s">
+						<h4 class="text-x">HỖ TRỢ</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="page/document.html" class="text-bla">Tài liệu</a>
+							</li>
+							<li>
+								<a href="page/share.html" class="text-bla">Chia sẻ</a>
+							</li>
+							<li>
+								<a href="page/tool.html" class="text-bla">Thủ thuật</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot wow fadeInRight" data-wow-delay="0.8s">
+						<h4 class="text-x">TRỢ GIÚP</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="page/forum.html" class="text-bla">Diễn đàn</a>
+							</li>
+							<li>
+								<a href="page/aboutus.html" class="text-bla">Về chúng tôi</a>
+							</li>
+							<li>
+								<a href="page/contact.html" class="text-bla">Liên hệ với chúng tôi</a>
+							</li>
+						</ul>
+					</div>
+			
+				</div>
+			</section>
+		</div>
+		<div class="text-center p-3 text-whi wow fadeInUp" data-wow-delay="0.6s" style="background-color: rgba(0, 0, 0);">
+			Cung cấp bởi <a class="text-whi" href="#!">THINHVKU</a> © 2021 Copyright. Sắp đăng ký bản quyền rev 04/11/2021 9:11:02 PM
+		</div>
+	</footer>
+	
+	<!-- Nút quay về đầu trang -->
+	<script>
+	$(document).ready(function(){ 
+		$(window).scroll(function(){ 
+			if ($(this).scrollTop() > 100)
+			{
+				$('#back-to-top').fadeIn();
+			} else { 
+				$('#back-to-top').fadeOut();
+			} 
+		}); 
+		$('#back-to-top').click(function(){ 
+			$("html, body").animate({ scrollTop: 0 }, 600);
+			return false; 
+		}); 
+	});
+	</script>
+	<span id="back-to-top">
+		<i class="fas fa-chevron-up fa-2x"></i>
+	</span>
+	
+	<!-- JavaScript -->
+	
+	<script>
+		InlineEditor
+			.create( document.querySelector( '#editor' ) )
+			.catch( error => {
+            console.error( error );
+			} );
+	</script>
+		<script type="text/javascript" src="js/load.js"></script>
+		<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+</body>
+</html>

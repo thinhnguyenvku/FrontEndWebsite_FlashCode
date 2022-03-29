@@ -1,0 +1,50 @@
+.topp { width: 85%; margin: auto; }
+
+.toptool { width: 100%; float: left; background-color: white; box-shadow:3px 3px 3px  gray; }
+
+.toptool:hover { box-shadow:5px 5px 5px  gray; }
+
+.toptool label { padding-left: 15px; }
+.toptool p { padding-left: 15px; }
+
+.headtool { padding: 3% 5%; display: flex; flex-direction: column; text-align: center; justify-content: center; margin-bottom: 60px; padding: 60px; }
+
+.abcd { margin-left: 15px; }
+.dcba { margin-left: 15px; width:85%;}
+
+.padd-bott { padding-bottom:100px; }
+.mar-topp { margin-top: 15px; }
+
+.aaa { margin: 15px; }
+
+
+.tieudetool { margin-top: 20px; color : #2c31cf;}
+.tieudetool:hover { text-decoration: underline; }
+
+
+.dienthoai {
+	display:none;
+}
+
+
+
+@media screen and (max-width: 425px) {
+	.headtool {
+		padding-top:10px;
+		padding-bottom:5px;
+	}
+	.dienthoai {
+		display:block;
+	}
+	.full {
+		display:none;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+	
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+	
+}

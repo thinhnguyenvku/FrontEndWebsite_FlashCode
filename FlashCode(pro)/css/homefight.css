@@ -1,0 +1,10 @@
+/* Thi đấu */
+.top2 { width: 46%; margin: auto; background-color: white;}
+.top2 img { width: 100%; height: 150px; }
+.top2:hover { box-shadow:10px 10px 10px gray; }
+.top2 img:hover { transition: 0.5s; image-rendering: pixelated; }
+.top2 h5:hover { cursor: pointer; color : #2c31cf; }
+.top2 h5 { padding: 0px 5px; }
+.top2 p { padding: 0px 5px; }
+.top2left { float: left; }
+.top2right { float: right; }

@@ -1,0 +1,37 @@
+.ima {
+	  transition: all 0.5s ease 0s;
+	  
+}
+.ima:hover {
+		  transform:scale(1.05);
+		  
+}
+
+
+@media screen and (max-width: 425px) {
+	h1 {
+		font-size:30px;
+	}
+	.headcontact {
+		padding-top: 10px;
+	}
+	.text-red {
+		padding:0px;
+	}
+	.bg-white {
+		text-align:center;
+	}
+	.padd-bott {
+		padding-top:10px;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+	.container {
+		text-align:center;
+	}
+	.padd-bott {
+		width:66%;
+		padding-top:2rem;
+	}	
+}

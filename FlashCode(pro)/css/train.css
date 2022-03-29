@@ -1,0 +1,78 @@
+.headtrain { width:100%; image-rendering: pixelated; }
+.topp { width: 85%; margin: auto; }
+.toptrain { width: 22%; float: left; margin: 1.4em 1.1em; background-color: white; box-shadow:0.5em 0.5em 0.5em  gray; }
+.toptrainselect { width: 22%; float: left; margin: 1.1em 1.1em 1.1em 0.13px; }
+.toptraininsert{ width: 22%; float: right; margin: 1.1em -3em 1.1em 1.1em; }
+
+.toptrain img { width: 39%;}
+.toptrain:hover { box-shadow:0.4em 0.4em 0.4em  gray; }
+.toptrain img:hover { transition: 0.5s; image-rendering: pixelated; }
+.toptrain h5:hover{ cursor: pointer; color : #2c31cf; }
+.toptrain h5 { padding: 0px 0.4em; }
+.toptrain p { padding: 0px 0.4em; color: gray; }
+
+.padd-bott1 { padding-bottom:2.7em; }
+.padd-bott2 { padding-bottom:5.4em; }
+.padd-topp { padding-top:2em; }
+.xxx:hover { background-color: #2c31cf; }
+
+.page-link { color:#2c31cf; }
+
+.iconcmt:hover { color:#2c31cf; }
+
+.topp .toptrain a{ text-decoration: none; color: black; }
+
+
+
+
+.dienthoai {
+	display:none;
+}
+
+
+@media screen and (max-width: 425px) {
+	.dienthoai {
+		display:block;
+	}
+	.full {
+		display:none;
+	}
+	.toptraininsert {
+		text-align:center;
+	}
+	.toptrainselect {
+		padding-left:3.3em;
+	}
+	.toptrain {
+		width:100%;
+	}
+	.pagination {
+		font-size:10px;
+	}
+
+	.topp {
+		width:90%;
+		margin:0px;
+	}
+	.pd {
+		padding:1rem;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+	.toptrain {
+		width: 44%;
+	}
+	.toptrainselect, .toptraininsert {
+		width:30%;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+	.toptrain {
+		width: 29%;
+	}
+	.toptrainselect, .toptraininsert {
+		width:28%;
+	}
+}

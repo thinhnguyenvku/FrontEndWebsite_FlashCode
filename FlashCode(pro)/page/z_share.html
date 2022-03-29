@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Flash Sort - Thuật toán sắp xếp thần thánh</title>
+	<meta charset="utf-8">
+	<meta name="news_keywords" content="flashcode, khóa học, lập trình, trực tuyến, học lập trình miễn phí, thủ thuật lập trình" />
+	<meta name="description" content="FlashCode - nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách nhanh chóng và chính xác." />
+	<link rel="icon" type="img/png" href="../image/flash.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	<script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/inline/ckeditor.js"></script>
+	<link rel="stylesheet" href="../css/animate.css">
+	
+	<link rel="stylesheet" href="../css/z_share.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="preloading">
+	<div class="load">
+      <div class="spinner-border text-success"></div>
+	</div>
+	
+	<!-- NAVIGATION -->
+
+		<nav class="navbar navbar-expand-xl bg-light sticky-top wow fadeInDownBig" data-wow-delay="0.5s" >
+			<div class="logg wow fadeInLeft" data-wow-delay="0.6s"><a class="navbar-brand" href="../index.html"><img src="../image/logo.jpg" alt="logo" class="logo"></a></div>
+			<div class="menuu wow fadeInRight" data-wow-delay="0.7s">
+				<button class="navbar-toggler menu" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon">MENU </span>
+				</button>
+			</div>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		    <ul class="navbar-nav mr-auto ">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle wow fadeInUp" data-wow-delay="0.7s" href="learn.html" id="navbardrop" data-toggle="dropdown">Khóa học</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="learn.html#section1">Kiến thức cơ sở</a>
+							<a class="dropdown-item" href="learn.html#section2">Lập trình cơ sở</a>
+							<a class="dropdown-item" href="learn.html#section3">Lập trình nâng cao</a>
+							<a class="dropdown-item" href="learn.html#section4">Giải quyết vấn đề</a>
+							<a class="dropdown-item" href="learn.html#section5">Kỹ năng nâng cao</a>
+						</div>
+				</li>
+				<li class="nav-item wow fadeInUp" data-wow-delay="0.8s">
+				    <a class="nav-link" href="train.html">Luyện tập</a>
+				</li>
+				<li class="nav-item wow fadeInUp" data-wow-delay="0.9s">
+				    <a class="nav-link" href="fight.html">Thi đấu</a>
+				</li>
+				<li class="nav-item wow fadeInUp" data-wow-delay="1s">
+				    <a class="nav-link" href="forum.html">Diễn đàn</a>
+				</li>
+				<li class="nav-item wow fadeInUp" data-wow-delay="1.1s">
+				    <a class="nav-link" href="document.html">Tài liệu</a>
+				</li>
+				<li class="nav-item wow fadeInUp" data-wow-delay="1.2s">
+				    <a class="nav-link gachchan" href="share.html">Chia sẻ</a>
+				</li>
+				<li class="nav-item wow fadeInUp" data-wow-delay="1.2s">
+				    <a class="nav-link" href="tool.html">Thủ thuật</a>
+				</li>
+			</ul>
+			<ul  class="navbar-nav ml-auto">				
+				<li class="dropdown sel wow fadeInRight" data-wow-delay="0.7s">
+					<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img src="https://www.countryflags.io/vn/flat/32.png"></a>
+					<div class="dropdown-menu sel1">
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/vn/flat/32.png">Tiếng Việt</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/gb/flat/32.png">English</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/kr/flat/32.png">한국어</a>
+						<a class="dropdown-item" href="#"><img src="https://www.countryflags.io/jp/flat/32.png">日本語</a>
+					</div>
+				</li>
+				<li class="vip wow fadeInRight" data-wow-delay="0.8s">
+						<form action="account.html" class="vip">
+							<button type="submit" class="btn btn-danger">
+								Đăng Nhập
+							</button>
+						</form>
+				</li>
+		    </ul>
+		</div>
+	</nav>
+	
+	<div class="topfull">
+		<span class ="backtrain wow fadeInLeft" data-wow-delay="0.7s">
+			<a href="share.html"><i class="fas fa-chevron-left" style="padding-left:10px; padding-top: 10px; font-size:25px"></i></a>
+		</span>
+	</div>
+	
+	<!-- BÀI VIẾT -->
+	
+	<div class="topp mar-bott">
+		<div class="row">
+			
+			<!-- BÀI VIẾT -->
+			
+			<div class="col-sm-9 topshare bg-white wow fadeInUp" data-wow-delay="0.7s">
+				<br>
+				<p>Tác giả: <a href="#!"><font color=#2c31cf>Thịnh VKU</font></a></p>
+				<hr>
+				<img src="../image/chiase8.jpg">
+				<h2>Flash Sort - Thuật toán sắp xếp thần thánh </h2>
+				<p>Bài viết sẽ làm rõ về Flash Sort - một thuật toán cho tốc độ rất nhanh trong
+				thực tế, tuy nhiên cách thức cài đặt lại 
+				tương đối phức tạp.
+				</p>
+				<h4>Flash Sort là gì?</h4>
+				<p>Nhắc tới Flash có lẽ chúng ta sẽ nghĩ đến hình ảnh này</p>
+				<img src="../image/zshare1.jpg">
+				<p>
+				Tuy nhiên ngày hôm nay chúng ta sẽ không nói đến The Flash, mà sẽ là 1 thuật toán 
+				có tên giống với siêu anh hùng có nguồn gốc từ DC này: Flash Sort.
+				</p>
+				<p>
+				Flash Sort ra đời năm 1998 bởi tác giả Karl-Dietrich Neubert, sở dĩ tác giả tự tin 
+				đặt tên là "Flash Sort" có lẽ là bởi ông rất tự tin về tốc độ chớp nhoáng của thuật toán sắp xếp này.
+				Và trên thực tế thuật toán này cho tốc độ rất nhanh (các bạn có thể xem số 1 số thống kê nhỏ mà
+				mình từng đề cập ở bài viết này Đâu Mới Là Thuật Toán Sắp Xếp Tốt Nhất?
+				</p>
+				<h4>Flash sort hoạt động như thế nào?</h4>
+				<p>
+				Flash sort là một thuật toán sắp xếp tại chỗ (in-situ, không dùng mảng phụ) có độ phức tạp O(n), không đệ qui,
+				gồm có 3 bước: (1) Phân lớp dữ liệu, tức là dựa trên giả thiết dữ liệu tuân theo 1 phân bố nào đó, chẳng hạn 
+				phân bố đều, để tìm 1 công thức ước tính vị trí (lớp) của phần tử sau khi sắp xếp. (2) Hoán vị toàn cục, tức 
+				là dời chuyển các phần tử trong mảng về lớp của mình. (3) Sắp xếp cục bộ, tức là để sắp xếp lại các phần tử 
+				trong phạm vi của từng lớp.
+				</p>
+				<p>
+				Quá trình này cũng tương tự như việc xếp lớp và xếp chỗ cho học sinh lớp 1 trong một trường học, theo tên học sinh.
+				(Giả sử tên học sinh được phân bố đều; thực tế điều này không đúng, chẳng hạn, số tên vần H, T thường nhiều hơn 
+				vần A, B, C.)
+				</p>
+				<p>
+				Lúc đầu các học sinh đang ngồi trong các phòng học của trường, nhưng không theo thứ tự nào cả.
+				</p>
+				<p>
+				(1) Phân lớp: 26 phòng học mỗi phòng sẽ là 1 lớp: A, B, C,...
+				</p>
+				<p>
+				(2) Hoán vị toàn cục: dời từng học sinh về đúng lớp của mình; khi một học sinh vào lớp, một học sinh 
+				(ngồi chưa đúng lớp) sẽ phải nhường chỗ.
+				</p>
+				<p>
+				(3) Sắp xếp cục bộ: cô giáo chủ nhiệm từng lớp sẽ sắp xếp chỗ ngồi cho các em trong lớp của mình.
+				</p>
+				<p>
+				Cụ thể hơn, với bước Phân lớp dữ liệu ta có thể chia nhỏ thêm các bước như sau (với a[] là mảng cần
+				được sắp xếp có n phần tử):
+				</p>
+				<p>
+				+ Bước 1: Tìm giá trị nhỏ nhất của các phần tử trong mảng(minVal) và vị trí phần tử  lớn nhất của các phần tử trong mảng(max).
+				<br>+ Bước 2: Khởi tạo 1 vector L có m phần tử (ứng với m lớp, trong source code lần này chọn số lớp bằng 0.45n).
+				<br>+ Bước 3: Đếm số lượng phần tử các lớp theo quy luật, phần tử a[i] sẽ thuộc lớp k = int((m - 1) * (a[i]-minVal) / (a[max] - minVal)).
+				<br>+ Bước 4: Tính vị trí kết thúc của phân lớp thứ j theo công thức L[j] = L[j] + L[j - 1] (j tăng từ 1 đến m - 1).
+				Sở dĩ như vậy bởi ta có thể hình dung như sau: 
+				</p>
+				<img src="../image/zshare2.jpg">
+				<p>
+				Sau khi đã có được vị trí kết thúc của các phân lớp ta tiến hành bước Hoán vị toàn cục.
+				</p>
+				<p>
+				Việc này sẽ hình thành các chu trình hoán vị: mỗi khi ta đem một phẩn tử ở đâu đó đến một vị trí nào đó thì ta phải nhấc phần tử hiện tại
+				đang chiếm chỗ ra, và tiếp tục với phần tử bị nhấc ra và đưa đến chỗ khác cho đến khi quay lại vị trí ban đầu 
+				thì hoàn tất vòng lặp.
+				</p>
+				<p>
+				+ Vấn đề 1: Vậy làm thế nào để khi cầm trong tay 1 phần tử nào đó, ta biết phải bỏ nó vào chỗ nào cho phù hợp? Câu trả lời thật đơn giản,
+				ta tính xem nó phải nằm ở phân lớp nào, rồi bỏ nó vào cái vị trí hiện tại của phân lớp đó, và vì ta bỏ vào phân lớp đó 1 phần tử nên phải
+				lùi vị trí của phân lớp lại 1 đơn vị.
+				<br>+ Vấn đề 2: Mặc dù ta đã đi qua 1 chu trình nhưng vẫn còn những phần tử chưa ở đúng chỗ thì phải làm thế nào? Cũng đơn giản, tiến hành 
+				1 chu trình khác cho đến khi không còn con thỏ nào trong chuồng bò và ngược lại nữa thì thôi.
+				<br>+ Vấn đề 3: Vậy là ta có một số các chu trình cần phải xử lý, vậy tại mỗi chu trình ta phải bắt đầu từ phần tử nào của mảng 
+				(Cycle leaders searching)? Đây cũng là một trong những điều đơn giản: ta chỉ việc duyệt từ đầu đến cuối mảng và tìm xem phần tử nào 
+				không nằm trong phân lớp (I&#60;L[K[I]]), và bắt đầu bằng phần tử đó.
+				</p>
+				<p>
+				Source code của bước hoán vị toàn cục có thể biểu diễn như sau:
+				</p>
+				<img src="../image/zshare3.png">
+				<h4>Tạm kết</h4>
+				<p>
+				Cảm ơn các bạn đã dành thời gian đọc bài viết. Hi vọng những chia sẻ của mình có thể giúp các bạn biết được thêm 1 thuật toán hay trong vô vàn các
+				thuật toán sắp xếp. Hẹn gặp lại các bạn trong các bài viết sau!
+				</p>
+				<hr>
+				<h4 class="tieude wow fadeInLeft">Nhận xét (0)</h4>
+				<br>
+				<hr>
+				<h4 class="tieude wow fadeInLeft">Tạo nhận xét</h4>
+				<div class="col-sm-6 wow fadeInUp">
+					<form action="#!">
+						<div class="form-group">
+							<div id="editor" class="bg-bluedark text-white" style="border-radius: 15px;"><br><br><br><br></div>
+						</div>
+						<button type="submit" class="btn btn-danger">Bình luận</button>
+					</form>
+				</div>
+				<br>
+			</div>
+				
+			<!-- KHÁC -->
+				
+			<div class="col-sm-3 topkhac">
+				<ul>
+					<h4 class="tieude wow fadeInRight" data-wow-delay="0.2s">Bài viết mới</h4>
+					<li class="wow fadeInRight" data-wow-delay="0.4s"><img src="../image/chiase1.jpg"><p>Lập trình Sudoku bằng Java</p></li>
+					<li class="wow fadeInRight" data-wow-delay="0.5s"><img src="../image/chiase2.jpg"><p>Thuật toán đào tạo mạng</p></li>
+					<li class="wow fadeInRight" data-wow-delay="0.6s"><img src="../image/chiase3.jpg"><p>Cân bằng PTHH bằng C++</p></li>
+					<li class="wow fadeInRight" data-wow-delay="0.7s"><img src="../image/chiase4.jpg"><p>Thuật toán đưa ra chuỗi</p></li>
+					<li class="wow fadeInRight" data-wow-delay="0.8s"><img src="../image/chiase5.jpg"><p>Trò chơi đoán số Python</p></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!-- FOOTER -->
+	
+	<footer class="bg-light text-center text-bla bor wow fadeInUp" data-wow-delay="0.5s">
+		<div class="container p-4">
+			<section class="mb-4 wow fadeInDown" data-wow-delay="0.6s">
+				<a class="btn btn-outline-x btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+				<a class="btn btn-outline-info btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+				<a class="btn btn-outline-danger btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-google"></i></a>
+				<a class="btn btn-outline-purple btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+				<a class="btn btn-outline-primary btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+				<a class="btn btn-outline-dark btn-floating m-1 whi" href="#!" role="button"><i class="fab fa-github"></i></a>
+			</section>
+			<section class="wow fadeInDown" data-wow-delay="0.7s">
+				<form action="#!">
+					<div class="row d-flex justify-content-center">
+						<div class="col-auto">
+							<p class="pt-2">
+								<strong>Đăng ký Email nhận tin mới:</strong>
+							</p>
+						</div>
+						<div class="col-md-5 col-12">
+							<div class="form-outline form-whi mb-4">
+								<input type="email" id="form5Example2" class="form-control" />
+							</div>
+						</div>
+						<div class="col-auto">
+							<button type="submit" class="btn btn-outline-x mb-4">
+								Đăng ký
+							</button>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section class="mb-4 wow jackInTheBox" data-wow-delay="0.7s">
+				<p>
+					FlashCode là nền tảng tương tác trực tuyến hỗ trợ người dùng học tập, thực hành, thi đấu và đánh giá kỹ năng lập trình một cách <br class="brr">nhanh chóng và chính xác.
+				</p>
+			</section>
+			<section style="text-align: left;">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 mb-4 mb-md-0 wow fadeInLeft" data-wow-delay="0.6s">
+						<h4 class="text-red">THÔNG TIN</h4>
+						<ul class="list-unstyled mb-0 footinfo">
+							<li>
+								<i class="fas fa-map-marker-alt text-red"> </i>
+								<a href="https://goo.gl/maps/b266nju4tnL1ZZmGA" target="_blank" class="text-bla"> &nbsp;470 Trần Nghĩa, Hòa Quý, Ngũ Hành Sơn, Đà Nẵng</a>
+							</li>
+							<li>
+								<i class="fas fa-phone text-red"> </i>
+								<a href="#!" class="text-bla"> 0973309606</a>
+							</li>
+							<li>
+								<i class="far fa-envelope text-red"> </i>
+								<a href="#!" class="text-bla"> npthinh.20it2@vku.udn.vn</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 wow fadeInRight" data-wow-delay="0.6s">
+						<h4 class="text-x">LIÊN KẾT</h4>
+						<ul class="list-unstyled mb-0 foot">
+							<li>
+								<a href="../page/learn.html" class="text-bla">Khóa học</a>
+							</li>
+							<li>
+								<a href="../page/train.html" class="text-bla">Luyện tập</a>
+							</li>
+							<li>
+								<a href="../page/fight.html" class="text-bla">Thi đấu</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot wow fadeInRight" data-wow-delay="0.7s">
+						<h4 class="text-x">HỖ TRỢ</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="../page/document.html" class="text-bla">Tài liệu</a>
+							</li>
+							<li>
+								<a href="../page/share.html" class="text-bla">Chia sẻ</a>
+							</li>
+							<li>
+								<a href="../page/tool.html" class="text-bla">Thủ thuật</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 mb-4 mb-md-0 foot wow fadeInRight" data-wow-delay="0.8s">
+						<h4 class="text-x">TRỢ GIÚP</h4>
+						<ul class="list-unstyled mb-0">
+							<li>
+								<a href="../page/forum.html" class="text-bla">Diễn đàn</a>
+							</li>
+							<li>
+								<a href="../page/aboutus.html" class="text-bla">Về chúng tôi</a>
+							</li>
+							<li>
+								<a href="../page/contact.html" class="text-bla">Liên hệ với chúng tôi</a>
+							</li>
+						</ul>
+					</div>
+			
+				</div>
+			</section>
+		</div>
+		<div class="text-center p-3 text-whi wow fadeInUp" data-wow-delay="0.6s" style="background-color: rgba(0, 0, 0);">
+			Cung cấp bởi <a class="text-whi" href="#!">THINHVKU</a> © 2021 Copyright. Sắp đăng ký bản quyền rev 04/11/2021 9:11:02 PM
+		</div>
+	</footer>
+	
+	<!-- Nút quay về đầu trang -->
+	<script>
+	$(document).ready(function(){ 
+		$(window).scroll(function(){ 
+			if ($(this).scrollTop() > 100)
+			{
+				$('#back-to-top').fadeIn();
+			} else { 
+				$('#back-to-top').fadeOut();
+			} 
+		}); 
+		$('#back-to-top').click(function(){ 
+			$("html, body").animate({ scrollTop: 0 }, 600);
+			return false; 
+		}); 
+	});
+	</script>
+	<span id="back-to-top">
+		<i class="fas fa-chevron-up fa-2x"></i>
+	</span>
+	
+	<script>
+		InlineEditor
+			.create( document.querySelector( '#editor' ) )
+			.catch( error => {
+				console.error( error );
+			} );
+	</script>
+	<script type="text/javascript" src="../js/load.js"></script>
+	<script type="text/javascript" src="../js/wow.min.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,225 @@
+.ima {
+	border-radius: 2%;  
+	transition: all 0.5s ease 0s;  
+}
+.ima:hover {
+	transform:scale(1.1);
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);	  
+}
+
+.our-team {
+	padding: 0px 0 40px;
+	margin-bottom: 30px;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	background-color: #fff;
+}
+.our-team .title {
+	font-size: 15px;
+	color: black;
+}
+
+.our-team .social {
+	width: 100%;
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+	bottom: 0;
+}
+.name {
+	color: black;
+}
+
+
+
+.ima {
+	overflow: hidden;
+	transition: all 0.5s ease 0s;
+	position: relative;  
+}
+.ima:hover {
+	transform:scale(1.1);
+	box-shadow: 0 0 1px 1px rgba(0, 140, 186, 0.5);	  
+}
+
+
+.alo{
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	width: 90%;
+}
+
+.alo:hover {
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+.tieude { 
+	padding-top: 50px; 
+	color : #2c31cf; 
+	margin-left: 10px; 
+}
+.tieude:hover { 
+	text-decoration: underline; 
+}
+
+a{color:black;}
+.xoay {
+		padding-top:7vh;
+	}
+.xoay1 {
+	margin-left:2rem;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 425px) {
+	.top1 {
+		width:100%;
+		text-align:justify;
+	}
+	.khoahoc {
+		margin:0 12% 0 8%;
+		padding:0px;
+		text-align:center;
+	}
+	#tieude1 {
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	#tieude2{
+		padding-bottom:10px;
+	}
+	.tieude {
+		padding-bottom:30px;
+		padding-top:70px;
+	}
+	.col-sm-4 {
+		padding-left:0px;
+		padding-right:40px;
+	}
+	#tieude3 {
+		padding-bottom:10px;
+	}
+	.diendan {
+		padding-left:35px;
+	}
+	.banner {
+		padding-top:20px;
+	}
+	
+	.top2 {
+		width:100%;
+	}
+	.top-60 { 
+		width:100%;
+	}
+	.madewith {
+		padding-top:40px;
+	}
+	.xoayy {
+		padding-left:0rem;
+	}
+	.ani-xoay {
+		width:240px;
+		margin-left:15%;
+	}
+	.xoay1 {
+		margin:0px;
+	}
+	.xoay {
+		padding:0 0 0 10%;
+	}
+	.thidau, .tailieu, .luyentap, .thaoluan {
+		text-align:center;
+	}
+	.doingu {
+		padding-bottom:2px;
+	}
+	.bannerr {
+		text-align:center;
+	}
+	.main_achieve {
+		width:110%;
+	}
+	.giua {
+		text-align:center;
+		margin-left:0px;
+	
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+	.top1 {
+		width:45%;
+		text-align:justify;
+	}
+	.khoahoc {
+		
+	}
+	.chiase {
+		margin-left:-4.6rem;
+	}
+	.sharr {
+		width:126%;
+		padding-top:10px;
+	}
+	.alo {
+		float:left;
+	}
+	.top {
+		width:100%;
+	}
+	.madewith {
+		padding-top:2rem;
+	}
+	.top-60 {
+		width:100%;
+	}
+	.xoayy {
+		padding-left:3rem;
+	}
+	
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+	.top1 {
+		width:45%;
+		text-align:justify;
+	}
+	
+	.chiase {
+		margin-left:-4.6rem;
+	}
+	.sharr {
+		width:126%;
+		padding-top:10px;
+	}
+	.alo {
+		float:left;
+	}
+	.top {
+		width:90%;
+	}
+	
+	.top-60 {
+		width:100%;
+	}
+	.xoayy {
+		padding-left:176px;
+	}
+	.madewith {
+		padding-top:2rem;
+	}
+	
+}
